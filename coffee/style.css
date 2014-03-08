@@ -1,0 +1,19 @@
+body{
+	font-family: Tahoma, Verdana, sans-serif;
+	font-size: 14px;
+}
+.column1{
+	float:left; 
+    width: 40%;
+    padding: 35px;
+}
+
+.column2{
+	float:right;
+	width: 40%;
+	padding: 35px;
+}
+footer{
+	clear:both;
+	background-color:#d5768b;
+}
