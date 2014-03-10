@@ -1,95 +1,63 @@
-/* anchors*/
-a{
-	text-decoration: none;
+body{
 }
-ul {
-	list-style: none;
-}
-
-/* html5 tags */
-header, section, footer, aside, nav, article, figure {
-	display: block;
-}
-
 /* HEADER */
 header{
-	background: url('images/beans.jpg') no-repeat;
-	margin: 0 auto;
-	width: 1024px;
+	background: url('images/beans.jpg') center no-repeat #040707;
 	height: 281px;
+	width:100%;
+	margin: 0 auto;
+	position: relative;
+
 }
+
 .logo {
 	position: relative;
-	margin-top: 30px;
-	margin-left: 440px;
+	top: 20px;
+	left: 45%;
 }
 
 /* NAVIGATION */
 nav{
+	position:absolute;
 	background: #230b03;
-	position: absolute;
-	top: 232px;
-	height:37px;
-	width:1024px;
-
+	width:100%;
+	bottom: 20px;
 
 }
 
 ul.topnav{
+	position: relative;
 	list-style: none;
 	font-family: Georgia, serif;
 	font-size: 18px;
-	word-spacing: 20px;
-	width: 1024px;
-	height: 37px;
-	margin-top: 7px;
-	margin-left: 340px;
+	float: left;
+	margin: 0;
+	padding:7px;
+	left: 39%;
 }
+
 ul.topnav li{
-	display:inline;
+	display: inline;
+	margin:0;
+
 }
 ul.topnav li a{
 	color:#a38f74;
+	text-decoration: none;
+	padding: 10px 12px;
 }
 
-/* BODY */
-body{
-	position:absolute;
-	margin: 0;
+/* CONTAINER */
+section.container{
+	max-width: 800px;
+	margin:auto;
 }
 
-.container{
-	position:absolute;
-}
-.column1{
+article.column{
 	float:left; 
-    width: 35%;
-    margin-left:95px;
-    padding: 15px 30px;
+    width: 40%;
+    padding: 10px 4%;
     text-align: center;
-    border: 1px red dotted;
-}
-
-.column2{
-	float:right;
-	width: 35%;
-	margin-right:95px;
-	padding: 15px 40px;
-	text-align: center;
-	border: 1px gray solid;
-
-}
-
-article.left{
-	padding:0 66px;
-	border: 1px blue solid;
-	font-family: Times New Roman, serif;
-	font-size: 16px;
-}
-
-article.right{
-	padding:0 66px;
-	border: 1px blue solid;
 	font-family: Times New Roman, serif;
 	font-size: 16px;
 }
@@ -101,21 +69,15 @@ h3.entry-title {
 	font-weight: 600;
 }
 
-
 footer{
-	position: absolute;
+	height:150px;
 	top:658px;
 	left:95px;
-	width:1024px;
-	height:100px;
+	width:100%;
 	clear:both;
 	background-color:#230b03;
 	text-align: center;
 	font-family: Georgia, serif;
 	color:#a38f74;
 	padding-top:25px;
-}
-.footertext{
-	position:relative;
-
 }
