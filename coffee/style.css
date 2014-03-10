@@ -1,19 +1,121 @@
+/* anchors*/
+a{
+	text-decoration: none;
+}
+ul {
+	list-style: none;
+}
+
+/* html5 tags */
+header, section, footer, aside, nav, article, figure {
+	display: block;
+}
+
+/* HEADER */
+header{
+	background: url('images/beans.jpg') no-repeat;
+	margin: 0 auto;
+	width: 1024px;
+	height: 281px;
+}
+.logo {
+	position: relative;
+	margin-top: 30px;
+	margin-left: 440px;
+}
+
+/* NAVIGATION */
+nav{
+	background: #230b03;
+	position: absolute;
+	top: 232px;
+	height:37px;
+	width:1024px;
+
+
+}
+
+ul.topnav{
+	list-style: none;
+	font-family: Georgia, serif;
+	font-size: 18px;
+	word-spacing: 20px;
+	width: 1024px;
+	height: 37px;
+	margin-top: 7px;
+	margin-left: 340px;
+}
+ul.topnav li{
+	display:inline;
+}
+ul.topnav li a{
+	color:#a38f74;
+}
+
+/* BODY */
 body{
-	font-family: Tahoma, Verdana, sans-serif;
-	font-size: 14px;
+	position:absolute;
+	margin: 0;
+}
+
+.container{
+	position:absolute;
 }
 .column1{
 	float:left; 
-    width: 40%;
-    padding: 35px;
+    width: 35%;
+    margin-left:95px;
+    padding: 15px 30px;
+    text-align: center;
+    border: 1px red dotted;
 }
 
 .column2{
 	float:right;
-	width: 40%;
-	padding: 35px;
+	width: 35%;
+	margin-right:95px;
+	padding: 15px 40px;
+	text-align: center;
+	border: 1px gray solid;
+
 }
+
+article.left{
+	padding:0 66px;
+	border: 1px blue solid;
+	font-family: Times New Roman, serif;
+	font-size: 16px;
+}
+
+article.right{
+	padding:0 66px;
+	border: 1px blue solid;
+	font-family: Times New Roman, serif;
+	font-size: 16px;
+}
+
+h3.entry-title {
+	color:#3b2313;
+	font-family: Helvetica, sans-serif;
+	font-size:20px;
+	font-weight: 600;
+}
+
+
 footer{
+	position: absolute;
+	top:658px;
+	left:95px;
+	width:1024px;
+	height:100px;
 	clear:both;
-	background-color:#d5768b;
+	background-color:#230b03;
+	text-align: center;
+	font-family: Georgia, serif;
+	color:#a38f74;
+	padding-top:25px;
+}
+.footertext{
+	position:relative;
+
 }
