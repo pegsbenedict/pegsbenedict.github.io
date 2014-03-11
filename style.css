@@ -8,13 +8,11 @@ body{
 
 
 .wrapper{
-	border: 1px blue solid;
 	margin: 15px 100px 0 15px;
 }
 
-a{
-	text-decoration: none;
-	color: black;
+a:hover{
+	color: #35DAB2;
 }
 header{
 	position: relative;
@@ -34,7 +32,10 @@ nav{
 	text-transform: uppercase;
 }
 
-
+nav a{
+	text-decoration: none;
+	color: black;
+}
 
 .container{
 	background-color: #fff;
@@ -48,7 +49,6 @@ h1{
 
 h1.monogram{
 	padding: 2px 2px 0 2px;
-	border: 5px black solid;
 }
 
 .profile{
@@ -56,5 +56,21 @@ h1.monogram{
 	border: 5px black solid;
 }
 
+.bio a{
+	text-decoration: none;
+	font-style:italic;
+	color: black;
+}
+
+.bio a:hover{
+	color: #35DAB2;
+	font-size:15px;
+}
+
+footer{
+	background: ##e0e0d7;
+	position: relative;
+
+}
 
 
