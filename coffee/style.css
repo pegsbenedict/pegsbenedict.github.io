@@ -13,7 +13,8 @@ header{
 .logo {
 	position: relative;
 	top: 20px;
-	left: 45%;
+	margin: 0 auto 20px;
+	display: block;
 }
 
 /* NAVIGATION */
@@ -30,10 +31,9 @@ ul.topnav{
 	list-style: none;
 	font-family: Georgia, serif;
 	font-size: 18px;
-	float: left;
 	margin: 0;
 	padding:7px;
-	left: 39%;
+	text-align: center;
 }
 
 ul.topnav li{
