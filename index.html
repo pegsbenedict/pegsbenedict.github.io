@@ -3,36 +3,40 @@
 <head>
 	<title>Welcome!</title>
 	<meta charset="utf-8" />
-	<link href="css/normalize.css" rel="stylesheet">
-	<script type="text/javascript">
-WebFontConfig = { fontdeck: { id: '46892' } };
-
-(function() {
-  var wf = document.createElement('script');
-  wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
-  '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
-  wf.type = 'text/javascript';
-  wf.async = 'true';
-  var s = document.getElementsByTagName('script')[0];
-  s.parentNode.insertBefore(wf, s);
-})();
-</script>
+	<link href="normalize.css" rel="stylesheet">
+	<link href="style.css" rel="stylesheet">
+	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=PT+Mono' rel='stylesheet' type='text/css'>
 </head>
 <body>
-	<div class="wrapper">
-		<div class="topnav">
-		<h1>Margo Yoon is pixelated.</h1>
+		<div class="header">
+			<h1><a href="http://margopixelated.com">Margo Yoon is pixelated.</a></h1>
 			<ul class="navlinks">
-			<li><a href="#">work</a></li>
-			<li><a href="#">practice</a></li>
-			<li><a href="#">about</a></li>
+			<li><a class="work" href="#">work</a></li>
+			<li><a class="practice" href="#">practice</a></li>
+			<li><a class="about" href="#">about</a></li>
 			</ul>
 		</div>
 		<div class="content">
-			<h2>This is where the content will be</h2>
+			<h2>Hello!<h2>
+			<p>I design interactions between humans and robots.<br>
+			Pardon the pixels while my site is under construction.<br>
+			Currently available for contract work. Send me a <a class="mail" href="mailto:hi@margopixelated.com">hi@margopixelated.com</a></p>
+		</div>
+			<!--<div class="tblofcontents">
+			<div class="row">
+				<a href="#"><div class="box"><img class="projO1" src="http://placehold.it/275x225" /></div></a>
+				<a href="#"><div class="box"><img class="projO2" src="http://placehold.it/275x225" /></div></a>
+				<a href="#"><div class="box"><img class="projO3" src="http://placehold.it/275x225" /></div></a>
+			</div>
+			<div class="row">
+				<a href="#"><div class="box"><img class="projO4" src="http://placehold.it/275x225" /></div></a>
+				<a href="#"><div class="box"><img class="projO5" src="http://placehold.it/275x225" /></div></a>
+				<a href="#"><div class="box"><img class="projO6" src="http://placehold.it/275x225" /></div></a>
+			</div>-->
 		</div>
 		<footer>
-			<p>This is the footer</p>
+			<p>Designed by yours truly<img src="icons/pxheart.svg" onerror="this.onerror=null; this.src='pxheart.png'"; alt="pixel-heart" width="25px" />. ©2014 Margo Yoon</p>
 		</footer>
 </body>
 </html>
