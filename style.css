@@ -14,9 +14,6 @@ body{
 		 url('webfonts/mohave-bold-webfont.svg#webfont') format('svg');
 }
 
-a {
-	text-decoration: none;
-}
 
 .wf-loading body {
     visibility: hidden;
@@ -112,6 +109,12 @@ p{
 	text-decoration: none;
 	font-weight:800;
 	color:#000;
+}
+
+.link{
+	text-decoration: none;
+	color:#000;
+	font-weight: 800;
 }
 
 .row{
