@@ -1,0 +1,295 @@
+body{
+	width: 100%;
+	height: auto;
+	margin:0;
+	font-family:'PT Mono', 'Lato', sans-serif;
+}
+
+@font-face{
+	font-family: 'mohave-bold';
+	src: url('webfonts/mohave-bold-webfont.eot');
+	src: url('webfonts/mohave-bold-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('webfonts/mohave-bold-webfont.woff') format('woff'),
+		 url('webfonts/mohave-bold-webfont.ttf') format('truetype'),
+		 url('webfonts/mohave-bold-webfont.svg#webfont') format('svg');
+}
+
+
+.wf-loading body {
+    visibility: hidden;
+}
+
+/*Header*/
+header{
+	width:100%;
+	height:auto;
+	text-align:center;
+	border-bottom: 1px #ebebeb solid;
+}
+
+h1 a{
+	font-family: 'Lato', sans-serif;
+	font-style:normal;
+	font-size:36pt;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	word-spacing: 10px;
+	text-decoration:none;
+	color:#000;
+}
+
+/*Mini Header*/
+header.min{
+	width:100%;
+	height:74px;
+	text-align:center;
+	border-bottom: 1px #ebebeb solid;
+}
+
+header.min h3{
+	font-weight: bold;
+	font-family: 'Lato', sans-serif;
+	font-style:normal;
+	font-size:12pt;
+	text-transform: uppercase;;
+	letter-spacing: 3px;
+	word-spacing: 10px;
+	text-decoration:none;
+	color:#000;
+}
+
+.navlinks.min{
+	line-height:7px;
+	margin:0;
+	padding:0px 42px 0 0;
+	word-spacing: 18px;
+}
+
+/*Main Navigation*/
+.navlinks li{
+	display:inline-block;
+	list-style: none;
+	text-transform: uppercase;
+	font-weight: 100;
+	font-size: 16pt;
+	font-family: 'mohave-bold', sans-serif;
+	letter-spacing: 8px;
+}
+
+.navlinks a{
+	text-decoration: none;
+	color:#4A4A4A;
+	padding-left:5px;
+	padding-bottom:3px;
+}
+
+.navlinks a:active{
+	text-decoration: none;
+	border-bottom: 5px solid #4A4A4A;
+	padding-bottom:3px;
+}
+
+.navlinks a:hover{
+	text-decoration: none;
+	border-bottom: 5px solid #4A4A4A;
+}
+
+.navlinks{
+	word-spacing: 40px;
+	margin-left:0;
+	padding:10px 74px 0 0;
+	line-height: 40px;
+}
+
+.container{
+	position:relative;
+	width:100%;
+	height: auto;
+}
+
+section{
+	border-top:1px red dotted;
+	border-bottom:1px red dotted;
+}
+
+article{
+	margin:0 auto;
+	width:100%;
+}
+
+article.content{
+		margin-top:50px;
+		margin-left:18%;
+		width: 65%;
+}
+
+h2{
+	font-weight: 600;
+	font-size: 20pt;
+	color:#4A4A4A;
+	line-height: 28pt;
+	margin-top: 3px;
+}
+
+h4{
+	font-family:'Lato', sans-serif;
+	font-size:18pt;
+	border: 15px rgba(158, 158, 158, 0.8) double;
+	text-transform: capitalize;
+	color:rgba(158, 158, 158, 0.8);
+	letter-spacing: 3px;
+	padding:0 10%;
+	text-align: center;
+}
+
+p{
+	font-size: 12pt;
+	line-height: 30pt;
+	margin:0 auto;
+	font-weight: 400;
+}
+.mail{
+	text-decoration: none;
+	font-weight:800;
+	color:#000;
+}
+
+.row{
+	width: 900px;
+	padding-bottom: 25px;
+	margin:0 auto;
+}
+
+a{
+	text-decoration: none;
+}
+
+a:hover{
+	text-decoration: none;
+	border-bottom: 5px solid #4A4A4A;
+}
+
+.home{
+	padding-bottom:50px;
+}
+
+/*Portfolio section*/
+.portfolio{
+	height:auto;
+	width:100%;
+	padding-bottom:50px;
+}
+
+.work{
+	width: 100%;
+	height: auto;
+	padding: 25px 15% 0 15%;
+}
+
+.work-title{
+	width:27%;
+	text-align: center;
+	margin-left:20%;
+	padding:3px;
+}
+
+.work.01{
+ background:url(http://placehold.it/1250x50) no-repeat center center fixed;
+ background-size: cover;
+}
+
+.02{
+ background:url(http://placehold.it/1250x50) no-repeat center center fixed;
+ background-size: cover;
+}
+
+.03{
+ background:url(http://placehold.it/1250x50) no-repeat center center fixed;
+ background-size: cover;
+}
+.04{
+ background:url(http://placehold.it/1250x50) no-repeat center center fixed;
+ background-size: cover;
+}
+
+/*Project*/
+
+h2.proj-title{
+	font-family:'Lato', sans-serif;
+	text-transform: capitalize;
+	text-align: center;
+	border: 15px #4A4A4A double;
+	letter-spacing: 3px;
+	margin:0;
+}
+
+.proj-subtitle{
+	text-align:center;
+	font-style: italic;
+	font-family:'Lato', sans-serif;
+	font-size: 16pt;
+	font-weight:300;
+	letter-spacing: 4px;
+	margin-top:0;
+	margin-bottom: 10px;
+}
+
+p.intro{
+	line-height: 20pt;
+}
+
+p.row{
+	width:100%;
+	line-height: 20pt;
+	clear: both;
+	padding-bottom:25px;
+}
+.col-left{
+	width:45%;
+	float:left;
+	/*margin-right:1%;*/
+	padding-bottom:25px;
+	position: relative;
+}
+.col-right{
+	position:relative;
+	width:45%;
+	float:right;
+	padding-bottom:25px;
+}
+/*Project images*/
+.proj-slider{}
+
+/*Projects end*/
+.proj-end{
+	width: 100%;
+	height:auto;
+	border:1px green solid;
+	margin:0 auto;
+}
+
+.proj-end p{
+	margin: 40px 0 0 18%;
+	width: 65%;
+	height: auto;
+}
+
+/*footer*/
+footer{
+	font-family:'PT Mono', 'Lato', sans-serif;
+	font-size: 11pt;
+	text-align: center;
+	letter-spacing: 3px;
+	border-top: 1px #ebebeb solid;
+	margin:50px 0;
+}
+
+.pixel-heart{
+	color:red;
+}
+
+.on{
+	text-decoration: none;
+	border-bottom: 5px solid #4A4A4A;
+}
+
