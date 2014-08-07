@@ -19,12 +19,8 @@ body{
     visibility: hidden;
 }
 
-a:hover{
-	text-decoration: none;
-	border-bottom: 5px solid #4A4A4A;
-}
-
-.header{
+/*Header*/
+header{
 	width:100%;
 	height:auto;
 	text-align:center;
@@ -35,14 +31,42 @@ h1 a{
 	font-family: 'Lato', sans-serif;
 	font-style:normal;
 	font-size:36pt;
-	text-transform: uppercase;;
+	text-transform: uppercase;
 	letter-spacing: 5px;
 	word-spacing: 10px;
 	text-decoration:none;
 	color:#000;
 }
 
-ul.navlinks li{
+/*Mini Header*/
+header.min{
+	width:100%;
+	height:74px;
+	text-align:center;
+	border-bottom: 1px #ebebeb solid;
+}
+
+header.min h3{
+	font-weight: bold;
+	font-family: 'Lato', sans-serif;
+	font-style:normal;
+	font-size:12pt;
+	text-transform: uppercase;;
+	letter-spacing: 3px;
+	word-spacing: 10px;
+	text-decoration:none;
+	color:#000;
+}
+
+.navlinks.min{
+	line-height:7px;
+	margin:0;
+	padding:0px 42px 0 0;
+	word-spacing: 18px;
+}
+
+/*Main Navigation*/
+.navlinks li{
 	display:inline-block;
 	list-style: none;
 	text-transform: uppercase;
@@ -59,7 +83,7 @@ ul.navlinks li{
 	padding-bottom:3px;
 }
 
-.navlink a:active{
+.navlinks a:active{
 	text-decoration: none;
 	border-bottom: 5px solid #4A4A4A;
 	padding-bottom:3px;
@@ -70,7 +94,7 @@ ul.navlinks li{
 	border-bottom: 5px solid #4A4A4A;
 }
 
-ul.navlinks{
+.navlinks{
 	word-spacing: 40px;
 	margin-left:0;
 	padding:10px 74px 0 0;
@@ -78,14 +102,15 @@ ul.navlinks{
 }
 
 .content{
+	position:relative;
 	margin: 40px 0 40px 18%;
 	width: 65%;
 	height: auto;
 }
 
-/*WORK*/
+/*WORK section*/
 .tblofcontents{
-	margin: 100px 0 40px 15%;
+	margin: 1 00px 0 40px 15%;
 	width: 100%;
 	height: auto;
 }
@@ -98,11 +123,14 @@ h2{
 	font-size: 20pt;
 	color:#4A4A4A;
 	line-height: 28pt;
+	margin-top: 3px;
 }
 
 p{
-	font-size: 13pt;
+	font-size: 12pt;
 	line-height: 30pt;
+	margin:0 auto;
+	font-weight: 400;
 }
 
 .mail{
@@ -111,16 +139,10 @@ p{
 	color:#000;
 }
 
-.link{
-	text-decoration: none;
-	color:#000;
-	font-weight: 800;
-}
-
 .row{
 	width: 900px;
-	height: 230px;
 	padding-bottom: 25px;
+	margin:0 auto;
 }
 
 .box{
@@ -130,6 +152,85 @@ p{
 	padding-left: 15px;
 }
 
+a{
+	text-decoration: none;
+}
+
+a:hover{
+	text-decoration: none;
+	border-bottom: 5px solid #4A4A4A;
+}
+
+.link{
+	text-decoration: none;
+	color:#000;
+	font-weight: 800;
+}
+
+/*Project*/
+
+h2.proj-title{
+	font-family:'Lato', sans-serif;
+	text-transform: capitalize;
+	text-align: center;
+	border: 15px #4A4A4A double;
+	letter-spacing: 3px;
+	margin:0;
+}
+
+.proj-subtitle{
+	text-align:center;
+	font-style: italic;
+	font-family:'Lato', sans-serif;
+	font-size: 16pt;
+	font-weight:300;
+	letter-spacing: 4px;
+	margin-top:0;
+	margin-bottom: 10px;
+}
+
+p.intro{
+	line-height: 20pt;
+}
+
+p.row{
+	width:100%;
+	line-height: 20pt;
+	clear: both;
+	padding-bottom:25px;
+}
+.col-left{
+	width:45%;
+	float:left;
+	/*margin-right:1%;*/
+	padding-bottom:25px;
+	position: relative;
+}
+.col-right{
+	position:relative;
+	width:45%;
+	float:right;
+	padding-bottom:25px;
+}
+/*Project images*/
+.proj-slider{}
+.proj01{}
+
+/*Projects end*/
+.proj-end{
+	width: 100%;
+	height:auto;
+	border:1px green solid;
+	margin:0 auto;
+}
+
+.proj-end p{
+	margin: 40px 0 0 18%;
+	width: 65%;
+	height: auto;
+}
+
+/*footer*/
 footer{
 	font-family:'PT Mono', 'Lato', sans-serif;
 	font-size: 11pt;
