@@ -2,7 +2,6 @@ body{
 	width: 100%;
 	height: auto;
 	margin:0;
-	font-family:'PT Mono', 'Lato', sans-serif;
 }
 
 @font-face{
@@ -72,7 +71,7 @@ header.min h3{
 	text-transform: uppercase;
 	font-weight: 100;
 	font-size: 16pt;
-	font-family: 'mohave-bold', sans-serif;
+	font-family: 'Mohave-Bold', sans-serif;
 	letter-spacing: 8px;
 }
 
@@ -106,6 +105,7 @@ header.min h3{
 	margin: 40px 0 40px 18%;
 	width: 65%;
 	height: auto;
+	font-family:'PT Mono', 'Lato', sans-serif;
 }
 
 /*WORK section*/
