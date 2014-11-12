@@ -1,10 +1,11 @@
 <!doctype html>
 <html>
 <head>
-	<title>Work.Werk.Werq.</title>
+	<title>The Noun Project - UX Research</title>
 	<meta charset="utf-8" />
+	<link rel="stylesheet" type="text/css" href="http://meyerweb.com/eric/tools/css/reset/reset.css">
 	<link href="normalize.css" rel="stylesheet">
-	<link href="styleB.css" rel="stylesheet">
+	<link href="style.css" rel="stylesheet">
 	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=PT+Mono' rel='stylesheet' type='text/css'>
 <script>
@@ -17,52 +18,104 @@
   ga('send', 'pageview');
 
 </script>
+ <script src="http://code.jquery.com/jquery-latest.js"></script>
+ <script src="js/magnific.js"></script> 
+ <script type="text/javascript">
+$(document).on("scroll",function(){
+    if($(document).scrollTop()>300){
+        $("header").removeClass("big").addClass("small");
+    } else{
+        $("header").removeClass("small").addClass("big");
+    }
+});
+</script>
+ <script type="text/javascript">
+ $(document).ready(function() {
+  $('.projTNPgallery_popup1').magnificPopup({
+  	items:[
+  	{src:'TNP_userpersona-BEN.png'
+  	};
+  	{src:'TNP_userpersona-MONA.png'
+	};
+	{src:'TNP_userpersona-DREW.png'
+	};
+	],
+	gallery:{
+		enabled:true
+	},
+	type:'image'
+	});
+	</script>
 </head>
 <body>
-		<header class="min">
-			<a href="http://margopixelated.com"><h3>Margo Yoon is pixelated.</h3></a>
-			<nav class="navlinks min">
-			<li><a class="work" href="http://margopixelated.com/work.html">work</a></li>
+		<header class="big">
+			<h1><a href="http://margopixelated.com">Margo Yoon is pixelated.</a></h1>
+			<nav><ul>
+			<li><a class="work" href="#">work</a></li>
 			<li><a class="practice" href="#">practice</a></li>
-			<li><a class="about" href="#">about</a></li>
-			</nav>
+			<li><a class="info" href="#">info</a></li>
+			</ul></nav>
 		</header>
-		<div class="container">
-			<h2 class="proj-title">The Noun Project<h2>
-			<div class="proj-subtitle">A SIC & TNP Collaboration</div>
-			<p class="intro row">The Noun Project is an online platform resource for icons, symbols, and imagery. As an open source site, The Noun Project tout themselves as the place for ‘Creating, Sharing, and Celebrating the World’s Visual Language’. <br>
-			</p>
+		<section class="proj-content">
+			<h2 class="proj-title">The User Experience of The Noun Project</h2>
+			<div class="proj-subtitle">SIC & TNP collaboration</div>
 				<p class="row">
-				<span class="col-left">
-					The Noun Project had recently launched a tiered pricing model for frequent icon users. They wanted to get a better understanding on who their users were, what the users activities were on the site, and what made their users purchase an icon versus downloading one for free. 
-				</span>
-				<span class="col-right">
-					I had two roles in this project, the first as the project manager the second as a UX/UI designer. As project manager, I made sure that the group was aligned with the project timeline and accomplishing their tasks. I also was the point of contact with the Head of Product keeping a clear line of communication on our progress. Being the UX/UI designer, I conducted the interviews with the users, analyzed the information, and presented a strategy to the company at the end of the project.
-				</span>
+				Introduction<br>
+					During my time in Startup Institute, I had the opportunity to work with The Noun Project. They had recently launched a new tiered pricing model and wanted to get some feedback about their users, the platform, and the efficacy of the new pricing. 
+					The objective of the project was to get an understanding of TNP users and habits, and any apparent pain points when using The Noun Project site.<br>
+					Since we had a limited amount of time and resources, we interviewed only existing TNP users in Chicago. 
 				</p>
 				<p class="row">
-					Since there was a limited length of time and resources, we focused on Noun Project users in Chicago. We contacted 94 of the 328 users and requested they fill out a preliminary survey about The Noun Project. After the responses, we contacted and conducted in-person user interviews with a variety of people whom were highly active on the site, from different professional backgrounds and a range of work experience. The interviews were video recorded for reference and the span of the interview was around 60 minutes. Also, they were almost always conducted at the interviewee’s home or workplace. We created loose guidelines for how we would conduct the interviews based on the information we wanted to know more about. We wanted the interviews to be more of a conversation rather than sterile interview. The insights from the interviews were organized into three main user personas of Noun Project users.
+				<p class="col-left">
+				About The Noun Project<br>
+					The Noun Project was built on the idea of having an resource of symbols and icons. What makes the site unique is the opportunity for designers to upload their designs for use under the Creative Commons license. Thus, a designer can gain income or at the least be credited for their work. The Noun Project has contributors from all over the world and has now become a community that creates, shares and celebrates the world's visual language.
+				</p>
+				<p class="col-right">
+				My Role<br>
+					I was the Project Manager and UX designer. My responsibilities as the Project Manager were to be point of contact with The Noun Project Product team, keep the SIC team aligned with the project objectives and managing the timeline. As UX designer, I and another SIC UX designer developed and executed a user interview plan. My team and I then collaborated on presenting our findings to the TNP Product team.
+				</p>
+		    	<p class="row">
+					Observations<br>
+					The initial action was to send out a brief survey to Chicago users on their activity on the platform. From the responses, we chose a handful of users with diverse backgrounds and usage habits to have an in-person interview.<br>
+					We created an outline separating interview questions into sections asking about their background, inquiries about icons and icon usage, their knowledge of TNP, their experiences using the platform.<br>
+					The guidelines of the interview were to approach the interviews less as "question and answer" and more of a conversation. Our approach allowed the interviewee to be more comfortable, and lead to more candid answers.<br>
+				</p>
+				<button id="open-popup" class="projTNPgallery_popup1"></button>
+				<p class="row">
+					Discovery<br>
+					After we completed the interviews, we collected our information and created three user personas from our findings.</p>
+				<p class="row">
+					Design<br>
+					Our observations from usability testing with users made us think of some solutions to a couple pain points on The Noun Project's new feature, Kits.</p>
+					<div class="proj-slider">
+					<img class="proj02" src="http://placehold.it/800x250" />
+				</div>
+				<p class="col-left">
+					Kits was a new feature that allows users to collect and organize icons that users might find inspiration in, use frequently, or may want to use in the future. Another aspect of Kits that is unique is the allowance of sharing a kit within an organization or other users.<br>
+				</p>
+				<p class="col-right">
+				Pain points with kits<br>
+					Users did not know what Kits were or its purpose.suggestion: introduction to kits as an onboarding process(standard layout that could be used for future added features)<br>
+					Had users struggle to figure out how to add an icon to a Kit.
+					suggestion: highlight the suitcase icon in the onboarding process
 				</p>
 				<div class="proj-slider">
-					<img class="projO1" src="http://placehold.it/800x250" />
-				</div>
-		    	<p class="row">
-					Text paragraph<br>
-					Text paragraph<br>
-					Text paragraph<br>
-				</p>
-		</div>
-		<!--end of project-->
-		<div class="proj-end">
+					<img class="proj03" src="http://placehold.it/800x250" />
+				<p class="row">
+					Things to consider<br>
+					Marketing plan: using things like Pinterest, and blog to show users different ways they can use icons outside of typical uses.
+					Business plan: modifying pricing model, unlimited dl of icons monthly subscription per user. Large agencies and organizations have an option for  yearly plan since they have a complex way of </p>
+		</section>
+		<section class="proj-end">
 			<p>Yay! You made it to end of this case study!<br>
-			Want to see more? Check out my collection of work below.<br>
-			Interested in working with me? Send me a  <a class="mail" href="mailto:hi@margopixelated.com">hi@margopixelated.com</a>.</p>
+			Want to see more? View my portfolio below<br>
+			Interested in collaborating?<br>
+			Send me a digital owl at <a class="mail" href="mailto:margo@margopixelated.com">margo@margopixelated.com</a>.</p>
 		<div class="work">
 			<img class="work-slider" src="http://placehold.it/1200x300" />
 		</div>
-		</div>
-		<footer>
-			<p>made with <img src="icons/pxheart.svg" onerror="this.onerror=null; this.src='icons/pxheart.png'"; alt="pixel-heart" width="25px" />. ©2014 margo yoon</p>
+		</section>
+		<footer><p class="bottom">made with <img src="icons/pxheart.svg" onerror="this.onerror=null; this.src='icons/pxheart.png'"; alt="pixel-heart" width="17px" />. ©2014 margo yoon</p>
 		</footer>
 </body>
 </html>
