@@ -21,6 +21,9 @@ body{
 
 /*Header*/
 header{
+	position:absolute;
+	top:0px:
+	left:0px;
 	width:100%;
 	height:auto;
 	text-align:center;
@@ -108,6 +111,7 @@ header.min h3{
 }
 
 section{
+	position:relative;
 	border-top:1px red dotted;
 	border-bottom:1px red dotted;
 }
@@ -169,50 +173,55 @@ a:hover{
 	border-bottom: 5px solid #4A4A4A;
 }
 
-.home{
-	padding-bottom:50px;
+section.home{
+	top: 146px;
+	left: 60px;
+	padding-bottom: 50px;
 }
 
 /*Portfolio section*/
-.portfolio{
-	height:auto;
+section.portfolio{
+	top: 145px;
+	left: 60px;
+	padding-bottom: 50px;
 	width:100%;
-	padding-bottom:50px;
+	height:700px;
+}
+
+.row{
+	width: 100%;
+	height: 200px;
+	margin-left: 230px;
 }
 
 .work{
-	width: 100%;
-	height: auto;
-	padding: 25px 15% 0 15%;
+	position:relative;
+	width: 307px;
+	height: 176px;
+	float:left;
+	margin-right:60px;
+	margin-left:30px;
 }
 
-.work-title{
-	width:27%;
+.work h4{
+	position: relative;
+	margin-top: 5px;
+	margin-bottom: 10px;
+	padding: 10px;
+	width: 256px;
+	height: 32px;
+}
+
+img.project-logo{
+	position: relative;
+	width: 75px;
+	height: 75px;
+	margin-bottom: 10px;
+	margin-left: 38%;
 	text-align: center;
-	margin-left:20%;
-	padding:3px;
 }
 
-.01{
- background:url(http://placehold.it/1250x50) no-repeat center center;
- background-size: cover;
-}
-
-.02{
- background:url(http://placehold.it/1250x50) no-repeat center center;
- background-size: cover;
-}
-
-.03{
- background:url(http://placehold.it/1250x50) no-repeat center center;
- background-size: cover;
-}
-.04{
- background:url(http://placehold.it/1250x50) no-repeat center center;
- background-size: cover;
-}
-
-/*Project*/
+/*Project page*/
 
 h2.proj-title{
 	font-family:'Lato', sans-serif;
@@ -257,9 +266,6 @@ p.row{
 	float:right;
 	padding-bottom:25px;
 }
-/*Project images*/
-.proj-slider{}
-
 /*Projects end*/
 .proj-end{
 	width: 100%;

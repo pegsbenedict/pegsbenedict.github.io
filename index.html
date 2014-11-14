@@ -1,8 +1,9 @@
 <!doctype html>
 <html>
 <head>
-	<title>Welcome!</title>
+	<title>Work.Werk.Werq.</title>
 	<meta charset="utf-8" />
+	<link rel="stylesheet" type="text/css" href="http://meyerweb.com/eric/tools/css/reset/reset.css">
 	<link href="normalize.css" rel="stylesheet">
 	<link href="style.css" rel="stylesheet">
 	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900' rel='stylesheet' type='text/css'>
@@ -17,36 +18,32 @@
   ga('send', 'pageview');
 
 </script>
-</head>
+ <script src="http://code.jquery.com/jquery-latest.js"></script>
+ <script type="text/javascript">
+$(document).on("scroll",function(){
+    if($(document).scrollTop()>300){
+        $("header").removeClass("big").addClass("small");
+    } else{
+        $("header").removeClass("small").addClass("big");
+    }
+});
+</script>
 <body>
-		<div class="header">
+		<header class="big">
 			<h1><a href="http://margopixelated.com">Margo Yoon is pixelated.</a></h1>
-			<ul class="navlinks">
-			<li><a class="work" href="http://margopixelated.com/work.html">work</a></li>
+			<nav><ul>
+			<li><a class="work" href="#">work</a></li>
 			<li><a class="practice" href="#">practice</a></li>
-			<li><a class="about" href="#">about</a></li>
-			</ul>
-		</div>
-		<div class="content">
-			<h2>Hello!<h2>
+			<li><a class="info" href="#">info</a></li>
+			</ul></nav>
+		</header>
+		<section class="stretch">
+			<h2>Hello!</h2>
 			<p>I design interactions between humans and robots.<br>
 			Pardon the pixels while my site is under construction.<br>
 			Currently available for FT/freelance work. Send me a <a class="mail" href="mailto:hi@margopixelated.com">hi@margopixelated.com</a></p>
-		</div>
-		<!--<div class="work" a href="work.html">
-			<div class="row">
-				<a href="#"><div class="box"><img class="projO1" src="http://placehold.it/275x225" /></div></a>
-				<a href="#"><div class="box"><img class="projO2" src="http://placehold.it/275x225" /></div></a>
-				<a href="#"><div class="box"><img class="projO3" src="http://placehold.it/275x225" /></div></a>
-			</div>
-			<div class="row">
-				<a href="#"><div class="box"><img class="projO4" src="http://placehold.it/275x225" /></div></a>
-				<a href="#"><div class="box"><img class="projO5" src="http://placehold.it/275x225" /></div></a>
-				<a href="#"><div class="box"><img class="projO6" src="http://placehold.it/275x225" /></div></a>
-			</div>-->
-		</div>
-		<footer>
-			<p>made with <img src="icons/pxheart.svg" onerror="this.onerror=null; this.src='icons/pxheart.png'"; alt="pixel-heart" width="25px" />. ©2014 margo yoon</p>
+		</section>
+		<footer><p class="bottom">made with <img src="icons/pxheart.svg" onerror="this.onerror=null; this.src='icons/pxheart.png'"; alt="pixel-heart" width="17px" />. ©2014 margo yoon</p>
 		</footer>
 </body>
 </html>
