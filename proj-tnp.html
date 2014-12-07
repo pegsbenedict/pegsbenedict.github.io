@@ -16,11 +16,9 @@
 
   ga('create', 'UA-47681249-1', 'auto');
   ga('send', 'pageview');
-
 </script>
- <script src="http://code.jquery.com/jquery-latest.js"></script>
- <script src="js/magnific.js"></script> 
- <script type="text/javascript">
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script type="text/javascript">
 $(document).on("scroll",function(){
     if($(document).scrollTop()>300){
         $("header").removeClass("big").addClass("small");
@@ -29,23 +27,6 @@ $(document).on("scroll",function(){
     }
 });
 </script>
- <script type="text/javascript">
- $(document).ready(function() {
-  $('.projTNPgallery_popup1').magnificPopup({
-  	items:[
-  	{src:'TNP_userpersona-BEN.png'
-  	};
-  	{src:'TNP_userpersona-MONA.png'
-	};
-	{src:'TNP_userpersona-DREW.png'
-	};
-	],
-	gallery:{
-		enabled:true
-	},
-	type:'image'
-	});
-	</script>
 </head>
 <body>
 		<header class="big">
@@ -80,7 +61,8 @@ $(document).on("scroll",function(){
 					We created an outline separating interview questions into sections asking about their background, inquiries about icons and icon usage, their knowledge of TNP, their experiences using the platform.<br>
 					The guidelines of the interview were to approach the interviews less as "question and answer" and more of a conversation. Our approach allowed the interviewee to be more comfortable, and lead to more candid answers.<br>
 				</p>
-				<button id="open-popup" class="projTNPgallery_popup1"></button>
+				<div class="proj-slider">
+					<img class="proj03" src="http://placehold.it/800x250" />
 				<p class="row">
 					Discovery<br>
 					After we completed the interviews, we collected our information and created three user personas from our findings.</p>

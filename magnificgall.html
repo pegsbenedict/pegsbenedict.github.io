@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+	<title>Magnific Gallery</title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="magnific-popup/magnific-popup.css">
+	<script src="js/magnific-popup.js"></script> 
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+  $('.image-link').magnificPopup({type:'image'});
+});
+</script>
+</head>	 
+<body>
+<button class="tnp1-popup" title="Click for image details"></button>
+<script type="text/javascript">
+$('.tnp1-popup').magnificPopup({
+    items: [
+      {
+        src: 'images/TNP_persona-BEN.png',
+        title: 'User Persona Ben'
+      },
+      {
+        src: 'images/TNP_persona-DREW.png',
+        title: 'User Persona Drew'
+      },
+      {
+       	src: 'images/TNP_persona-MONA.png',
+        title: 'User Persona Mona'
+      },
+    ],
+    gallery: {
+      enabled: true
+    },
+    type: 'image' // this is a default type
+});
+
+	</script>
+</body>
+</html>
