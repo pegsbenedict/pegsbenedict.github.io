@@ -3,15 +3,17 @@
 <head>
 	<title>Magnific Gallery</title>
 	<meta charset="utf-8" />
-	<link rel="stylesheet" href="magnific-popup.css">
-	<script src="js/magnific.js"></script> 
-	<script src="js/jquery.min.js"></script>
+  <link rel="stylesheet" href="style.css" type="type/css">
+	<link rel="stylesheet" href="magnific-popup.css" type="type/css">
 </head>	 
 <body>
-<button class="tnp1-popup" title="Click for image details"><img src="images/TNP/TNP-userpersonas.png" class="image-popup" />
+<button class="tnp1-popup" title="Click for image details"><img src="images/TNP/TNP-userpersonas.png" />
 </button>
+<div id="my-popup" class="mfp-hide white-popup">
+</div>
+<script src="js/magnific.js"></script>
+<script src="js/jquery.min.js"></script>
 <script type="text/javascript">
-$(document).ready(function() );
 $('.tnp1-popup').magnificPopup({
     items: [
       {
@@ -19,20 +21,24 @@ $('.tnp1-popup').magnificPopup({
         title: 'User Persona Ben'
       },
       {
-        src: 'images/TNP_persona-DREW.png',
+       src: 'images/TNP_persona-DREW.png',
         title: 'User Persona Drew'
       },
       {
-       	src: 'images/TNP_persona-MONA.png',
+        
+        src: 'images/TNP_persona-MONA.png',
         title: 'User Persona Mona'
       },
+      {
+        src: '#my-popup', // CSS selector of an element on page that should be used as a popup
+        type: 'image'
+      }
     ],
     gallery: {
       enabled: true
     },
     type: 'image' // this is a default type
 });
-
 	</script>
 </body>
 </html>
