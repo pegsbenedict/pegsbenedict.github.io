@@ -1,44 +1,29 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
+
 <head>
-	<title>Magnific Gallery</title>
-	<meta charset="utf-8" />
-  <link rel="stylesheet" href="style.css" type="type/css">
-	<link rel="stylesheet" href="css/magnific-popup.css" type="type/css">
-</head>	 
+
+  <meta charset="UTF-8">
+
+  <title>Magnific Gallery</title>
+
+  <link rel='stylesheet prefetch' href='css/magnific-popup.css'>
+  <link rel="stylesheet" href="css/magstyle.css" media="screen" type="text/css" />
+
+</head>
+
 <body>
-<button class="open-popup" title="Click for image details"><img src="images/TNP/TNP-userpersonas.png" />
-</button>
+
+  <button class="open-popup"></button>
+
 <div id="my-popup" class="mfp-hide white-popup">
 </div>
-<script src="js/jquery.magnific-popup.min.js"></script>
-<script src="js/jquery-2.1.1.min.js"></script>
-<script type="text/javascript">
-$('.open-popup').magnificPopup({
-    items: [
-      {
-        src: 'images/TNP/TNP_persona-BEN.png',
-        title: 'User Persona Ben'
-      },
-      {
-       src: 'images/TNP/TNP_persona-DREW.png',
-        title: 'User Persona Drew'
-      },
-      {
-        
-        src: 'images/TNP/TNP_persona-MONA.png',
-        title: 'User Persona Mona'
-      },
-      {
-        src: '#my-popup', // CSS selector of an element on page that should be used as a popup
-        type: 'image'
-      }
-    ],
-    gallery: {
-      enabled: true
-    },
-    type: 'image' // this is a default type
-});
-	</script>
+
+  <script src='js/jquery-2.1.1.min.js'></script>
+  <script src='js/jquery.magnific-popup.min.js'></script>
+
+  <script src="js/magpop.js"></script>
+
 </body>
+
 </html>

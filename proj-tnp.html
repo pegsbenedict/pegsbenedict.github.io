@@ -6,6 +6,8 @@
 	<link rel="stylesheet" type="text/css" href="http://meyerweb.com/eric/tools/css/reset/reset.css">
 	<link href="normalize.css" rel="stylesheet">
 	<link href="style.css" rel="stylesheet">
+	<link rel='stylesheet prefetch' href='css/magnific-popup.css'>
+  	<link rel="stylesheet" href="css/magstyle.css" media="screen" type="text/css" />
 	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=PT+Mono' rel='stylesheet' type='text/css'>
 <script>
@@ -61,8 +63,11 @@ $(document).on("scroll",function(){
 					We created an outline separating interview questions into sections asking about their background, inquiries about icons and icon usage, their knowledge of TNP, their experiences using the platform.<br>
 					The guidelines of the interview were to approach the interviews less as "question and answer" and more of a conversation. Our approach allowed the interviewee to be more comfortable, and lead to more candid answers.<br>
 				</p>
-				<div class="proj-slider">
-					<img class="proj03" src="http://placehold.it/800x250" />
+				 <button class="open-popup"></button>
+					<div id="my-popup" class="mfp-hide white-popup"></div>
+  					<script src='js/jquery-2.1.1.min.js'></script>
+ 				    <script src='js/jquery.magnific-popup.min.js'></script>
+					<script src="js/magpop.js"></script>
 				<p class="row">
 					Discovery<br>
 					After we completed the interviews, we collected our information and created three user personas from our findings.</p>
