@@ -1,8 +1,6 @@
 .open-popup {
-	background:#4A4A4A url(../images/TNP/TNP_userpersonas.png) no-repeat fixed;
-	width:800px;
-	height:250px;
-	border:3px solid #4A4A4A;
+  background-color:##CCCCCC;
+  border:none;
 }
 .white-popup {
   position: relative;
@@ -13,4 +11,21 @@
   max-width: 800px;
   margin: 20px auto;
   text-align: center;
+}
+
+.img-gallery{
+  width:900px;
+  height:100%;
+  display:block;
+  margin-bottom: 25px;
+  margin-left: auto;
+  margin-right:auto;
+}
+.open-oucrm {
+  background-color:#fff;
+  border:none;
+}
+
+button:hover{
+  background:rgba(0,0,0,0.3);
 }

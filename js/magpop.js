@@ -18,3 +18,20 @@ $('.open-popup').magnificPopup({
     },
     type: 'image' // this is a default type
 });
+
+$('.open-oucrm').magnificPopup({
+    items: [
+      {
+        src: 'images/OU/OUCRM-fam_card.png',
+        title: 'Detailed family information cards'
+      },
+      {
+        src: 'images/OU/OUCRM-fam_interactions.png',
+        title: 'Detailed family interaction section'
+      },
+    ],
+    gallery: {
+      enabled: true
+    },
+    type: 'image' // this is a default type
+});
