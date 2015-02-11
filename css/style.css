@@ -162,10 +162,11 @@ footer p.bottom{
 	color:#000;
 }
 .row{
-	position:relative;
+	position: relative;
 	width: 900px;
 	padding-bottom: 25px;
-	margin:0 auto;
+	margin: 0 auto;
+	clear: both;
 }
 
 .box{
