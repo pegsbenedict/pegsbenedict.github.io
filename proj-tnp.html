@@ -5,7 +5,7 @@
 	<meta charset="utf-8" />
 	<link rel="stylesheet" type="text/css" href="http://meyerweb.com/eric/tools/css/reset/reset.css">
 	<link href="normalize.css" rel="stylesheet">
-	<link href="style.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
 	<link rel='stylesheet prefetch' href='css/magnific-popup.css'>
   	<link rel="stylesheet" href="css/magstyle.css" media="screen" type="text/css" />
 	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900' rel='stylesheet' type='text/css'>
@@ -32,77 +32,119 @@ $(document).on("scroll",function(){
 </head>
 <body>
 		<header class="big">
-			<h1><a href="http://margopixelated.com">Margo Yoon is pixelated.</a></h1>
-			<nav><ul>
-			<li><a class="work" href="#">work</a></li>
-			<li><a class="practice" href="#">practice</a></li>
-			<li><a class="info" href="#">info</a></li>
-			</ul></nav>
+			<h1><a href="#">Margo Yoon is pixelated.</a></h1>
+			<nav><ul class="topnav">
+			<a class="work" href="#work">work</a></li>
+			<a class="practice" href="#">practice</a></li>
+			<a class="info" href="#info">info</a></li>
+			</ul>
+			</nav>
 		</header>
-		<section class="proj-content">
-			<h2 class="proj-title">The User Experience of The Noun Project</h2>
-			<div class="proj-subtitle">SIC & TNP collaboration</div>
-				<p class="row">
-				Introduction<br>
-					During my time in Startup Institute, I had the opportunity to work with The Noun Project. They had recently launched a new tiered pricing model and wanted to get some feedback about their users, the platform, and the efficacy of the new pricing. 
-					The objective of the project was to get an understanding of TNP users and habits, and any apparent pain points when using The Noun Project site.<br>
-					Since we had a limited amount of time and resources, we interviewed only existing TNP users in Chicago. 
-				</p>
-				<p class="row">
-				<p class="col-left">
-				About The Noun Project<br>
-					The Noun Project was built on the idea of having an resource of symbols and icons. What makes the site unique is the opportunity for designers to upload their designs for use under the Creative Commons license. Thus, a designer can gain income or at the least be credited for their work. The Noun Project has contributors from all over the world and has now become a community that creates, shares and celebrates the world's visual language.
-				</p>
-				<p class="col-right">
-				My Role<br>
-					I was the Project Manager and UX designer. My responsibilities as the Project Manager were to be point of contact with The Noun Project Product team, keep the SIC team aligned with the project objectives and managing the timeline. As UX designer, I and another SIC UX designer developed and executed a user interview plan. My team and I then collaborated on presenting our findings to the TNP Product team.
-				</p>
-		    	<p class="row">
-					Observations<br>
-					The initial action was to send out a brief survey to Chicago users on their activity on the platform. From the responses, we chose a handful of users with diverse backgrounds and usage habits to have an in-person interview.<br>
-					We created an outline separating interview questions into sections asking about their background, inquiries about icons and icon usage, their knowledge of TNP, their experiences using the platform.<br>
-					The guidelines of the interview were to approach the interviews less as "question and answer" and more of a conversation. Our approach allowed the interviewee to be more comfortable, and lead to more candid answers.<br>
-				</p>
-				 <button class="open-popup img-gallery"><img src="images/TNP/TNP_userpersonas.png" alt="TNP-personas" style="width:100%;" /></button>
+		<div class="container">
+			<div class="title-tnp">
+			<h2>The Noun Project UX</h2>
+				<h3>Understanding the Users of the World's Visual Language</h3>>
+			</div>
+			<section class="proj-content">
+				<div class="row">
+					<div class="col">
+					<h4>Introduction</h4>
+					<p>
+					During my time at Startup Institute, I had the opportunity to work with The Noun Project. They had recently launched a new pricing model for premium users on their platform. The company wanted to gain a better understanding of their users, measure the efficacy of the new pricing model and usability of the site.
+					</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col left">
+					<h4>My Role</h4>
+					<p>I was the UX designer conjointly with the role as Project manager. My responsibilities as the designer, was to develop and execute a user research plan. As project manager, I was the point of contact with the product team and kept my team aligned with project objectives and managing our timeline. My team then collaborated on presenting our findings to TNP founders and product team.</p>
+					</div>
+					<div class="col right">
+					<h4>The Facts</h4>
+					<ul>
+						<li>TNP launched a tiered pricing system for <a href="http://blog.thenounproject.com/post/69623674070/launched-the-new-noun-project">Premium Accounts.</a></li>
+						<li>A Premium Account allowed a user to download a designated number of asset licenses without need for attribution at a discounted monthly rate</li>
+						<li>1 month time period - research based in Chicago</li>
+					</ul>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col">
+						<h4>Who are TNP Users?</h4>
+						<p>The beginning of the project started off with the creation of a general user survey distributed via email to the 328 users based in Chicago. The survey consisted of 10 questions about user's demographics, icon usage, and usage of TNP platform. There was a 10% response rate. From that we narrowed down the pool for in-person interviews based on diversity of their professions, age, and activity on TNP site. <br>
+						For the in-person interviews, we designed a series of 30 questions under the topics of: <br>
+						User's background & technology usage(on mobile, web, and other digital devices)<br>
+						Icon Usage, what they are used for, the frequency they used, and the search for/selection/quality of icons used.<br>
+						The Noun Project inquiries, about TNP, usability of the site, purchasing and selling of assets
+					</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col">
+				 	<button class="open-popup img-gallery"><img src="images/TNP/TNP_userpersonas.png" alt="TNP-personas" style="width:100%;" /></button>
 					<div id="my-popup" class="mfp-hide white-popup"></div>
   					<script src='js/jquery-2.1.1.min.js'></script>
  				    <script src='js/jquery.magnific-popup.min.js'></script>
 					<script src="js/magpop.js"></script>
-				<p class="row">
-					Discovery<br>
-					After we completed the interviews, we collected our information and created three user personas from our findings.</p>
-				<p class="row">
-					Design<br>
-					Our observations from usability testing with users made us think of some solutions to a couple pain points on The Noun Project's new feature, Kits.</p>
-					<div class="proj-slider">
-					<img class="proj02" src="http://placehold.it/800x250" />
+					</div>
+				<div class="row">
+					<div class="col">
+					<h4>Pricing Insights</h4>
+					<p>According to the findings, users found the current tiered pricing model to be confusing. Some users frequency of downloading assets from TNP were erratic, so paying for a monthly membership did not seem logical. Other users shared their frustrations about the limitations of their options if by chance they went over the amount of icon licenses allowed per month. Also the monthly memberships make it very difficult to incorporate in larger companies(50+ employees) that deal with yearly or quarterly budgets. 
+					</p>
+					</div>
+					<div class="col left">
+					<h4>Keep. It. Simple.</h4>
+					<p>The solution to issues with the current pricing model is to recommend simplification of the tiers. Allowing users to pay a monthly fee to use an unlimited amount of icon licenses, gives users less pressure to download as many assets to "get their money's worth" as well as removes the barrier of going over a set amount of licenses. For businesses, the recommendation was to allow for yearly or monthly subscription based on the number of users.</p>
+					</div>
+					<div class="col col2">
+					<img src="images/TNP/newpricing.jpg" style="width:500px;" />
+					</div>
 				</div>
-				<p class="col-left">
-					Kits was a new feature that allows users to collect and organize icons that users might find inspiration in, use frequently, or may want to use in the future. Another aspect of Kits that is unique is the allowance of sharing a kit within an organization or other users.<br>
-				</p>
-				<p class="col-right">
-				Pain points with kits<br>
-					Users did not know what Kits were or its purpose.suggestion: introduction to kits as an onboarding process(standard layout that could be used for future added features)<br>
-					Had users struggle to figure out how to add an icon to a Kit.
-					suggestion: highlight the suitcase icon in the onboarding process
-				</p>
-				<div class="proj-slider">
-					<img class="proj03" src="http://placehold.it/800x250" />
-				<p class="row">
-					Things to consider<br>
-					Marketing plan: using things like Pinterest, and blog to show users different ways they can use icons outside of typical uses.
-					Business plan: modifying pricing model, unlimited dl of icons monthly subscription per user. Large agencies and organizations have an option for  yearly plan since they have a complex way of </p>
-		</section>
-		<section class="proj-end">
-			<p>Yay! You made it to end of this case study!<br>
-			Want to see more? View my portfolio below<br>
-			Interested in collaborating?<br>
-			Send me a digital owl at <a class="mail" href="mailto:margo@margopixelated.com">margo@margopixelated.com</a>.</p>
-		<div class="work">
-			<img class="work-slider" src="http://placehold.it/1200x300" />
-		</div>
-		</section>
-		<footer><p class="bottom">made with <img src="icons/pxheart.svg" onerror="this.onerror=null; this.src='icons/pxheart.png'"; alt="pixel-heart" width="17px" />. ©2014 margo yoon</p>
+				<div class="row">
+					<div class="col">
+					<h4>Engaging Users</h4>
+					<p>The Noun Project have been very successful at growing their user base, the challenge has been how to keep their users engaged. One simple and easy solution to engage users on their dashboards is to fill the empty data sets with suggestions to coax the user into taking some action.</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col left">
+						<img src="images/TNP/TNP-emptydata.png" style="width:450px;" />
+					</div>
+					<div class="col right">
+						<h4>What are Kits?</h4>
+						<p>During our research, TNP launched a new feature called Kits. Kits are for organizating assets for projects and can be shared with other team members.
+					We asked about the new feature during our interviews and none of the interviewees had any knowledge of it. A reason could have been because of the recent launch, but there was a lack of advertising of it. Specifically, a blog post and one slide on the homepage. Sliders in general have an abysmal click-through rate, and to view the blog post required the user to click the link on said slide.
+					</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col">
+						<h4>Introducing...Kits!</h4>
+						<p>During usability testing, we asked users to use the Kits feature. They were able to figure out how to put an icon in a Kit easy enough, but quickly became confused by where they could view the Kit the icon was placed. A design solution was to place an onboarding feature on users' Noun Project dashboards. This would give users an introduction to the Kits, but without any real friction to their regular tasks on TNP site. The idea was also to have a standard template that can be used to introduce other features in the future the same way.
+					</p>
+				</div>
+				<div class="row">
+					<div class="col left">
+					<img src="images/TNP/TNP-onboarddash.png" style="width:400px;" />
+					</div>
+				</div>
+
+				</div>
+				<div class="row">
+				<div class="col">
+					<h4>Possible Market Outside of Designers?</h4>
+					<p>One of our interviewees shared with us how his mother uses The Noun Project on menus that she creates for the fancy dinner parties she hosts. He stated that she likes to do crafts that use TNP, and because since she is not a designer, she would pay for use of icons. So the question is, how do we reach out to the D.I.Y. audience?
+					Our recommendation was to use popular media-driven outlets such as Pinterest and Instagram to share different ways of using design assets to appeal to the D.I.Y. crowd. Even sharing creative usages of TNP icons seen in daily life or "in the wild".</p>
+					</div>
+				<div class="row">
+					<div class="col">
+						<h4>Conclusion</h4>
+						<p>At the end of our month-long project, we had the opportunity to present our findings and recommendations to the founders, head of product and TNP product team. They greatly appreciated our insights and gained a greater understanding of their users' experiences. The interview survey and questions we designed were intended for a larger scale study of their users, which since then, has been an on-going process for the company. Also our insights on their pricing model gave them the confidence to switch to a simplier pricing structure that has been applied. 
+				</div>
+			</section>
+		</div>		
+		<footer><p class="bottom">made with <span class="icon-pxheart"></span>. ©2014 margo yoon</p>
 		</footer>
 </body>
 </html>

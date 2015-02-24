@@ -1,10 +1,11 @@
 <!doctype html>
 <html>
 <head>
-	<title>Welcome!</title>
+	<title>Work.Werk.Werq.</title>
 	<meta charset="utf-8" />
+	<link rel="stylesheet" type="text/css" href="http://meyerweb.com/eric/tools/css/reset/reset.css">
 	<link href="normalize.css" rel="stylesheet">
-	<link href="styleB.css" rel="stylesheet">
+	<link href="style.css" rel="stylesheet">
 	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=PT+Mono' rel='stylesheet' type='text/css'>
 <script>
@@ -17,64 +18,112 @@
   ga('send', 'pageview');
 
 </script>
+ <script src="http://code.jquery.com/jquery-latest.js"></script>
+ <script type="text/javascript">
+$(document).on("scroll",function(){
+    if($(document).scrollTop()>300){
+        $("header").removeClass("big").addClass("small");
+    } else{
+        $("header").removeClass("small").addClass("big");
+    }
+});
+</script>
 </head>
 <body>
-		<header>
-			<h1><a href="http://margopixelated.com">Margo Yoon is pixelated.</a></h1>
-			<nav class="navlinks">
-			<li><a href="http://margopixelated.com/portfolio.html">work</a></li>
-			<li><a class="practice" href="#">practice</a></li>
-			<li><a class="info" href="#">info</a></li>
+		<header class="big">
+			<h1><a href="#">Margo Yoon is pixelated.</a></h1>
+			<nav><ul class="topnav">
+			<a class="work" href="#work">work</a></li>
+			<a class="practice" href="#">practice</a></li>
+			<a class="info" href="#info">info</a></li>
+			</ul>
 			</nav>
 		</header>
 		<div class="container">
-		<!--HOME SECTION-->
-			<section class="home">
-				<article class="content">
-				<h2>Hello!<h2>
-					<p>I design interactions between humans and robots. Pardon the pixels while my site is under construction. Currently available for FT/freelance work. Send me a <a class="mail" href="mailto:hi@margopixelated.com">hi@margopixelated.com</a></p>
-				</article>
+		<!--INTRO SECTION-->
+			<section class="stretch intro">
+			<h1><a name="top">Hello!</a></h1>
+			<div class="content">
+					<p>I design interactions between humans and robots.<br>
+					Welcome to my website and pardon the pixels while my site is under construction.<br>
+					Currently available for FT/freelance work. Send me a <a class="mail" href="mailto:hi@margopixelated.com">hi@margopixelated.com</a></p><br>
+				</div>
+			<div class="social">
+				<a class="icon-github" href="https://github.com/pegsbenedict"></a>
+				<a class="icon-linkedin2" href="http://www.linkedin.com/in/margoyoon"></a>
+				<a class="icon-twitter" href="https://twitter.com/margopixelated"></a>
+				<a class="icon-instagram" href="http://www.instagram.com/pegsbenedict"></a>
+			</div>
 			</section>
 		<!--PORTFOLIO SECTION-->
-			<section class="portfolio" a href="portfolio.html">
-				<article class="content">
-				<h2>Work<h2>
-					<p>Case studies of my design work & process, explore below!
-					</p>
-				</article>
-				<div class="row">
-					<div class="work"><a href="#">
-						<img class="project-logo" src="images/TNP-logo.png" alt="the-noun-project-logo" />
-						<h4>The Noun Project</h4>
-					</a></div>
-					<div class="work"><a href="#">
-						<img class="project-logo" src="images/Wordoko-logo.png" alt="wordoko-logo" />
-						<h4>Wordoko</h4>
-					</a></div>
-				</div>
-				<div class="row">
-					<div class="work"><a href="#">
-							<img class="project-logo" src="images/TT-logo.png" alt="ting-ting-logo" width="100px" />
-							<h4>Ting! Ting!</h4></a>
+			<section class="portfolio">
+			<h1><a name="work">Work</a></h1>
+			<div class="content">
+				<p>Explore case studies of projects that illustrate my design process. Other projects that I've worked on can be viewed on <a href="https://www.behance.net/margopixelated">my Behance profile</a></p>
+			</div>
+				<div class="item item-type-line">
+				<a class="item-hover" href="http://margopixelated.com/proj-oucrm.html" target="_blank">
+					<div class="item-info">
+						<div class="headline">
+							Orion's University CRM
+								<div class="line"></div>
+								<div class="date">Organizing Complex Family Relationships
+								</div>
+						</div>
 					</div>
-					<div class="work"><a href="#">
-							<img class="project-logo" src="images/GE-logo.gif" alt="genesis-ensemble-logo" width="100px" />
-							<h4>Genesis Ensemble</h4></a>
-					</div>
+					<div class="mask"></div>
+				</a>
+				<div class="item-img"><img src="images/WORK-projou.jpg" alt="Project-OUCRM" />
 				</div>
+			</div>
+			<div class="item item-type-line">
+				<a class="item-hover" href="http://margopixelated.com/proj-tnp.html" target="_blank">
+					<div class="item-info">
+						<div class="headline">
+							The Noun Project UX
+								<div class="line"></div>
+								<div class="date">Understanding the Users of the World's Visual Language
+								</div>
+						</div>
+					</div>
+					<div class="mask"></div>
+				</a>
+				<div class="item-img"><img src="images/WORK-projtnp.jpg" alt="Project-TNPUX" />
+				</div>
+			</div>
+			<div class="item item-type-line">
+				<a class="item-hover" href="http://margopixelated.com/proj-wordoko.html" target="_blank">
+					<div class="item-info">
+						<div class="headline">
+							Wordoko UI
+								<div class="line"></div>
+								<div class="date">A Mobile Platform for Learning Japanese</div>
+						</div>
+					</div>
+					<div class="mask"></div>
+				</a>
+				<div class="item-img"><img src="images/WORK-projword.jpg" alt="Project-WORDOKO" />
+				</div>
+			</div>
+			<a href="#top">back to top</a>
 			</section>
-			<!--<section class="info">
-				<article class="content">
-				<h2>Info</h2>
-				<p>Margo is a designer who is skilled in graphics, UI, UX, and likes to code on the side. Raised in the Midwest with an influence of Korean culture, she balances the idealism of the American Dream with the pragmatism of having Asian parents. As a designer, she believes... <br><br>
-				Margo enjoys long breakfasts, riding her bike, baking french pastries, productivity hacks, and videos of baby sloths learning how to climb. She thinks that talking about herself can be awkward, but doesn't everyone kind of feel that way? <a href="http://www.anyclip.com/movies/blazing-saddles/breaking-the-fourth-wall/" target="_blank">See what I did there?</a><br>
+		<!--ABOUT ME SECTION-->
+			<section class="about">
+			<h1><a name="info">Info</a></h1>
+			<div class="content">
+				<p>Margo Yoon<br><br>
+				Skilled in UI, UX, interaction, graphic design. HTML & CSS.<br><br>
+				Contact me <a class="mail" href="mailto:margo.yoon@gmail.com">via email</a></p><br>
 				</p>
-			</article>
+			</div>
+			<a href="#top">back to top</a>
 			</section>
 		</div>
-		FOOTER SECTION
-		<footer>
-			<p>made with <img src="icons/pxheart.svg" onerror="this.onerror=null; this.src='icons/pxheart.png'"; alt="pixel-heart" width="25px" />. ©2014 margo yoon</p>
-		</footer>-->
+		<!--FOOTER SECTION-->
+		<footer class="bottom">
+			<p>made with <span class="icon-pxheart"></span>. ©2014 margo yoon<br>
+			Icons by <a href="http://www.icomoon.io">Icomoon</a> and <a href="http://www.thenounproject.com">The Noun Project</a><br>
+			Javascript by <a href="http://www.webdesignerdepot.com">Web Designer Depot</a> and <a href="http://www.magnific.com">Magnific.js</a></p>
+		</footer>
 </body>
 </html>

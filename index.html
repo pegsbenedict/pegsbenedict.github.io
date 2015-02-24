@@ -31,20 +31,99 @@ $(document).on("scroll",function(){
 </head>
 <body>
 		<header class="big">
-			<h1><a href="http://margopixelated.com">Margo Yoon is pixelated.</a></h1>
-			<nav><ul>
-			<li><a class="work" href="work.html">work</a></li>
-			<li><a class="practice" href="#">practice</a></li>
-			<li><a class="info" href="#">info</a></li>
-			</ul></nav>
+			<h1><a href="#">Margo Yoon is pixelated.</a></h1>
+			<nav><ul class="topnav">
+			<a class="work" href="#work">work</a></li>
+			<a class="practice" href="#">practice</a></li>
+			<a class="info" href="#info">info</a></li>
+			</ul>
+			</nav>
 		</header>
-		<section class="stretch">
-			<h2>Hello!</h2>
-			<p>I design interactions between humans and robots.<br>
-			Pardon the pixels while my site is under construction.<br>
-			Currently available for FT/freelance work. Send me a <a class="mail" href="mailto:hi@margopixelated.com">hi@margopixelated.com</a></p>
-		</section>
-		<footer><p class="bottom">made with <img src="icons/pxheart.svg" onerror="this.onerror=null; this.src='icons/pxheart.png'"; alt="pixel-heart" width="17px" />. ©2014 margo yoon</p>
+		<div class="container">
+		<!--INTRO SECTION-->
+			<section class="stretch intro">
+			<h1><a name="top">Hello!</a></h1>
+			<div class="content">
+					<p>I design interactions between humans and robots.<br>
+					Welcome to my website and pardon the pixels while my site is under construction.<br>
+					Currently available for FT/freelance work. Send me a <a class="mail" href="mailto:hi@margopixelated.com">hi@margopixelated.com</a></p><br>
+				</div>
+			<div class="social">
+				<a class="icon-github" href="https://github.com/pegsbenedict"></a>
+				<a class="icon-linkedin2" href="http://www.linkedin.com/in/margoyoon"></a>
+				<a class="icon-twitter" href="https://twitter.com/margopixelated"></a>
+				<a class="icon-instagram" href="http://www.instagram.com/pegsbenedict"></a>
+			</div>
+			</section>
+		<!--PORTFOLIO SECTION-->
+			<section class="portfolio">
+			<h1><a name="work">Work</a></h1>
+			<div class="content">
+				<p>Explore case studies of projects that illustrate my design process. Other projects that I've worked on can be viewed on <a href="https://www.behance.net/margopixelated">my Behance profile</a></p>
+			</div>
+				<div class="item item-type-line">
+				<a class="item-hover" href="http://margopixelated.com/proj-oucrm.html" target="_blank">
+					<div class="item-info">
+						<div class="headline">
+							Orion's University CRM
+								<div class="line"></div>
+								<div class="date">Organizing Complex Family Relationships
+								</div>
+						</div>
+					</div>
+					<div class="mask"></div>
+				</a>
+				<div class="item-img"><img src="images/WORK-projou.jpg" alt="Project-OUCRM" />
+				</div>
+			</div>
+			<div class="item item-type-line">
+				<a class="item-hover" href="http://margopixelated.com/proj-tnp.html" target="_blank">
+					<div class="item-info">
+						<div class="headline">
+							The Noun Project UX
+								<div class="line"></div>
+								<div class="date">Understanding the Users of the World's Visual Language
+								</div>
+						</div>
+					</div>
+					<div class="mask"></div>
+				</a>
+				<div class="item-img"><img src="images/WORK-projtnp.jpg" alt="Project-TNPUX" />
+				</div>
+			</div>
+			<div class="item item-type-line">
+				<a class="item-hover" href="http://margopixelated.com/proj-wordoko.html" target="_blank">
+					<div class="item-info">
+						<div class="headline">
+							Wordoko UI
+								<div class="line"></div>
+								<div class="date">A Mobile Platform for Learning Japanese</div>
+						</div>
+					</div>
+					<div class="mask"></div>
+				</a>
+				<div class="item-img"><img src="images/WORK-projword.jpg" alt="Project-WORDOKO" />
+				</div>
+			</div>
+			<a href="#top">back to top</a>
+			</section>
+		<!--ABOUT ME SECTION-->
+			<section class="about">
+			<h1><a name="info">Info</a></h1>
+			<div class="content">
+				<p>Margo Yoon<br><br>
+				Skilled in UI, UX, interaction, graphic design. HTML & CSS.<br><br>
+				Contact me <a class="mail" href="mailto:margo.yoon@gmail.com">via email</a></p><br>
+				</p>
+			</div>
+			<a href="#top">back to top</a>
+			</section>
+		</div>
+		<!--FOOTER SECTION-->
+		<footer class="bottom">
+			<p>made with <span class="icon-pxheart"></span>. ©2014 margo yoon<br>
+			Icons by <a href="http://www.icomoon.io">Icomoon</a> and <a href="http://www.thenounproject.com">The Noun Project</a><br>
+			Javascript by <a href="http://www.webdesignerdepot.com">Web Designer Depot</a> and <a href="http://www.magnific.com">Magnific.js</a></p>
 		</footer>
 </body>
 </html>

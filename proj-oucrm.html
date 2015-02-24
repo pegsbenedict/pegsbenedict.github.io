@@ -32,97 +32,109 @@ $(document).on("scroll",function(){
 </head>
 <body>
 		<header class="big">
-			<h1><a href="http://margopixelated.com">Margo Yoon is pixelated.</a></h1>
-			<nav><ul>
-			<li><a class="work" href="#">work</a></li>
-			<li><a class="practice" href="#">practice</a></li>
-			<li><a class="info" href="#">info</a></li>
-			</ul></nav>
+			<h1><a href="#">Margo Yoon is pixelated.</a></h1>
+			<nav><ul class="topnav">
+			<a class="work" href="#work">work</a></li>
+			<a class="practice" href="#">practice</a></li>
+			<a class="info" href="#info">info</a></li>
+			</ul>
+			</nav>
 		</header>
 		<div class="container">
+			<div class="title-ou">
+				<h2>Orion's University CRM</h2>
+					<h3>A Study in Customer Relationship Management</h3>
+			</div>
 			<section class="proj-content">
-				<h2 class="proj-title">Orion's University CRM</h2>
-					<div class="proj-subtitle"> A Tailor-Made Family Management System
-					</div>
 						<div class="row">
-							<p class="col-one">
-							Introduction<br>
-							While working at Speedbridge, I got the opportunity to work on a project was for Orion's University. Their sales team lacked a standardized organizational system to manage their leads information. Existing CRM software is often too bulky, and doesn't fit the needs of a company that communicates with families, instead of businesses. 
+							<div class="col">
+							<h4>Introduction</h4>
+							<p>
+							Orion's University was a growing social enterprise geared towards offering afterschool programs for students. Due to their growth, their sales teams needed a standardized system to organize and manage leads information. Already existing customer relationship management software was regarded too bulky for the needs of Orion's University. Also, because OU sales associates communicated with families, multiple relationships existed. Each relationship requiring documentation. A customized CRM system seemed to be the best solution for OU's needs. 
 							</p>
+							</div>
 						</div>
 						<div class="row">
-								<div class="col-left">
-									<p>About Orion's University<br>
-									As a social enterprise, Orion's University focuses on student learning through enriching K-12 after school programs and tutoring. They offer a wide range of programs, from physical activity to culinary classes, introducing students to subjects that might not be provided at school.
-									</p> 
-								</div>
-								<div class="col-right">
-									<p>My Role<br>
-									I designed the web app that would function as the customer relationships management system for OU's sales team. Using the user cases they complied, I created wireframes and designed mockups. I also got to work closely with the development team on how the system and interactions would look and function.
+								<div class="col left">
+									<h4>My Role</h4>
+									<p>I designed a customized CRM to improve sales operations for Orion's University. Utilizing their use case research, I created wireframes that suited the needs of the company. I was also responsible for the visual aesthetic of the platform and worked closely with the development team on the build.
 									</p>
+								</div>
+								<div class="col right">
+									<h4>The Facts</h4>
+									<ul>
+									<li>The need for a universal organizational system to collecting, recording, and sharing of contact leads for Orion's University</li><br>
+									<li>The system needs to represent the complexity of OU students' family relationships</li><br>
+									<li>Define the roles of adults in connection to students</li><br>
+									<li>Build a comprehensive system that information can be easily read and digested quickly</li>
+									</ul>
 								</div>
 						</div>	 
 						<div class="row">
-							<button class="open-oucrm img-gallery"><img src="images/OU/OUCRM-overview.png" alt="CRMdashboard_mockup" style="width:100%;" /></button>
+							<div class="col">
+								<button class="open-oucrm img-gallery"><img src="images/OU/OUCRM-overview.png" alt="CRMdashboard_mockup" style="width:100%;" /></button>
 								<div id="my-popup" class="mfp-hide white-popup"></div>
   								<script src='js/jquery-2.1.1.min.js'></script>
  				    			<script src='js/jquery.magnific-popup.min.js'></script>
 								<script src="js/magpop.js"></script>
-
-						</div>
-						<div class="row">
-							<p>Family First<br>
-								An important aspect to tackle while designing was the complicated nature of the students' family structures. I designed the overview to be organized by families instead of individuals. It is built to have infinite scrolling, but for more specific searching, the search bar and filtering are fixed at the top.
-							</p>
-						</div> 
-						<div class="row">
-								<img src="images/OU/OUCRM-addfam.gif" style="width:900px; "alt="adding_contact" />
-						</div>
-						<div class="row">
-							<p>Adding & Editing of CRM<br>
-							When designing the adding and editing features of the CRM, it was important to put into consideration the ease of those actions for the user. Instead of the user clicking a button that would take them to a separate page to add a family, I designed "add family" feature to inconspiciously slide out from the side for the user to quickly add a family contact.</p>
-						</div>
-						<div class="row">
-							<div class="col-left">
-								<img src="images/OU/OUCRM-cardflip.gif" width="400px" alt="contact_notes" />
 							</div>
-							<div class="col-right">
+						</div>
+						<div class="row">
+							<div class="col">
+							<h4>Family First</h4>
+								<p>An important aspect to tackle while designing was the complicated nature of the students' family structures. My approach was to have the overview to be organized by families instead of individuals. At a glance, a user could then view the total amount of adults, students, their relationships and roles.<br>
+								The app was built to have infinite scrolling so the user can look through as many of the contacts as quickly as possible. If one needed quick access to information, the search bar and filter are options fixed at the top of the page. 
+							</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col">
+								<img src="images/OU/OUCRM-addfam.gif" style="width:900px; "alt="adding_contact" />
+							</div>
+						</div>
+						<div class="row">
+							<div class="col">
+							<h4>Adding a Family</h4>
+							<p>When designing the adding and editing features of the CRM, it was important to put into consideration the ease of those actions for the user. Instead of a user clicking a button that would take them to a separate page to add a family, the "add family" feature inconspiciously slides out from the side of the page.</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col left">
 								<img src="images/OU/OUCRM-cardselect.gif" width="400px" alt="editing_contact" />
 							</div>
-						</div>
-						<div class="row">
-							<div class="col-left">
-								<p>To continue with the mindfulness of ease for the user, information of each individual can be directly edited by a click on their respective card.</p>
-							</div>
-							<div class="col-right">
-								<p>If there was any notes needed on the individual, a simple click on the bottom-right area of the card reveals any information the user may want to know.</p>
+							<div class="col right">
+								<img src="images/OU/OUCRM-cardflip.gif" width="400px" alt="contact_notes" />
 							</div>
 						</div>
 						<div class="row">
-							<img src="images/OU/OUCRM-intersect.gif" style="width:900px;" alt="adding_interaction" />
+							<div class="col left">
+								<h4>Card Edits</h4>
+								<p>In continuity with ease of the app, the info can be edited by simple selection of a contact's respective card.</p>
+							</div>
+							<div class="col right">
+								<h4>Card Notes</h4>
+								<p>If there was any additional information on a contact, a simple click on the bottom-right area of the card would reveal any information.</p>
+							</div>
 						</div>
 						<div class="row">
-							<p>The interactions section works the same way as the contact card, where if the user wanted to add an interaction, they click the interaction section. The section then reveals an form section they can then fill out and submit.</p>
+							<img class="col" src="images/OU/OUCRM-intersect.gif" style="width:900px;" alt="adding_interaction" />
 						</div>
 						<div class="row">
-							<p>Not Quite The End<br>
-							In conclusion, I designed a MVP that is functional, easy to use, and also enjoyable to interact with. Although the project ultimately was shelved, I felt that I had created a product that would be extremely helpful in productivity and organizational management for the company.
-							If the project was continued, my next steps would be to test out the product on OU's sales team, record their feedback, and then tweak any issues with it.</p>
+							<div class="col">
+							<h4>Adding an Interaction</h4>
+							<p>Every interaction with the family needs to be recorded for the sales teams. To composed an interaction event, a user can directly select the Interactions section. When selected, the Interactions section expands to reveal a form to record the event in a efficient manner. Rather than a scrollbar, the user can read through a set of three events at a time.</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col">
+							<h4>Conclusion</h4>
+							<p>While this project was quite a challenge, I learned a lot about how databases and sales operations function. Although having a customized CRM accomplishes only one area of sales management for the company, the creation of a standardized system designed for ease and quick comprehension will for certain increase productivity. Also, because of the design of the layout, it will improve sales associates understanding of their leads and their connections.<br>
+							The next steps are to test the product with the sales teams, get feedback, and make any other adjustments or additions accordingly. In the future, a mobile application of the CRM for sales associates to use onsite would be a goal.</p>
+							</div>
 						</div>
 			</section>
-			<section class="proj-end">
-				<div class="row">
-					<p>Yay! You made it to end of this case study!<br>
-					Want to see more? View my portfolio below<br>
-					Interested in collaborating?<br>
-					Send me a digital owl at <a class="mail" href="mailto:margo@margopixelated.com">margo@margopixelated.com</a>.
-					</p>
-				</div>
-				<div class="row">
-					<img class="work-slider" src="http://placehold.it/1200x300" />
-				</div>
-			</section>
-			<footer><p class="bottom">made with <img src="icons/pxheart.svg" onerror="this.onerror=null; this.src='icons/pxheart.png'"; alt="pixel-heart" width="17px" />. ©2014 margo yoon</p>
+			<footer><p class="bottom">made with <span class="icon-pxheart"></span>. ©2014 margo yoon</p>
 		</footer>
+		</div>
 </body>
 </html>
