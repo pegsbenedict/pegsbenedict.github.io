@@ -332,11 +332,12 @@ footer.bottom{
 	height: auto;
 	width: 100%;
 	text-align: center;
-	top:710px;
+	top:749px;
 	background:#fff;
 	border-top: 1px #ebebeb solid;
 	padding-top:7px;
 	padding-bottom:20px;
+	z-index:100;
 }
 
 .bottom p{
