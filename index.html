@@ -3,9 +3,8 @@
 <head>
 	<title>Welcome, Friend.</title>
 	<meta charset="utf-8" />
-	<link rel="stylesheet" type="text/css" href="http://meyerweb.com/eric/tools/css/reset/reset.css">
-	<link href="normalize.css" rel="stylesheet">
-	<link href="style.css" rel="stylesheet">
+	<link rel="stylesheet" href="normalize.css" >
+	<link rel="stylesheet" href="style.css" >
 	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=PT+Mono' rel='stylesheet' type='text/css'>
 <script>
@@ -28,101 +27,112 @@ $(document).on("scroll",function(){
     }
 });
 </script>
+<script>
+	$(function() {
+	  $('a[href*=#]:not([href=#])').click(function() {
+	    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+
+	      var target = $(this.hash);
+	      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+	      if (target.length) {
+	        $('html,body').animate({
+	          scrollTop: target.offset().top
+	        }, 1000);
+	        return false;
+	      }
+	    }
+	  });
+	});
+</script>
 </head>
 <body>
 		<header class="big">
 			<h1><a href="http://margopixelated.com">Margo Yoon is pixelated.</a></h1>
-			<nav><ul class="topnav">
-			<a class="work" href="#work">work</a></li>
-			<a class="practice" href="#">practice</a></li>
-			<a class="info" href="#info">info</a></li>
-			</ul>
+			<nav class="links">
+			<a href="#sect2">work</a></li>
+			<a href="#">practice</a></li>
+			<a href="#sect3">info</a></li>
 			</nav>
 		</header>
-		<div class="container">
-		<!--INTRO SECTION-->
-			<section class="stretch intro">
-			<h1><div id="top">Hello!</div></h1>
-					<p>Welcome to my website.<br>
-					My name is Margo Yoon. I enjoy designing connections between humans and computers.<br>
-					Let's collaborate together! Say <a class="mail" href="mailto:hi@margopixelated.com">hi@margopixelated.com</a></p><br>
-			<div class="social">
-				<a class="icon-github" href="https://github.com/pegsbenedict"></a>
-				<a class="icon-linkedin2" href="http://www.linkedin.com/in/margoyoon"></a>
-				<a class="icon-twitter" href="https://twitter.com/margopixelated"></a>
-				<a class="icon-instagram" href="http://www.instagram.com/pegsbenedict"></a>
-			</div>
-			</section>
-		<!--PORTFOLIO SECTION-->
-			<section class="portfolio">
-			<h1><div id="work">Work</div></h1>
-			<div class="content">
+		<main id="content">
+<!--INTRO--><div id="intro">
+					<article>
+						<h1>Hello!</h1>
+						<p>Welcome to my website.<br>
+						My name is Margo Yoon. I enjoy designing connections between humans and computers.<br>
+						Let's collaborate together! Say <a class="mail" href="mailto:hi@margopixelated.com">hi@margopixelated.com</a></p>
+					</article><br>
+					<article class="social">
+					<a class="icon-github" href="https://github.com/pegsbenedict"></a>
+					<a class="icon-linkedin2" href="http://www.linkedin.com/in/margoyoon"></a>
+					<a class="icon-twitter" href="https://twitter.com/margopixelated"></a>
+					<a class="icon-instagram" href="http://www.instagram.com/pegsbenedict"></a>
+					</article>
+				</div>
+
+<!--PORTFOLIO--><section id="sect2"></section>
+			<div id="work">
+				<article>
+				<h1>Work</h1>
 				<p>Explore case studies of projects that illustrate my design process. Other projects that I've worked on can be viewed on <a href="https://www.behance.net/margopixelated">my Behance profile</a></p>
-			</div>
-				<div class="item item-type-line">
-				<a class="item-hover" href="http://margopixelated.com/proj-oucrm.html" target="_blank">
-					<div class="item-info">
-						<div class="headline">
-							Orion's University CRM
-								<div class="line"></div>
-								<div class="date">Organizing Complex Family Relationships
+				</article>
+				<article><div class="item item-type-line">
+						<a class="item-hover" href="http://margopixelated.com/proj-oucrm.html" target="_blank">
+							<div class="item-info">
+								<div class="headline">Orion's University CRM
+									<div class="line"></div>
+									<div class="date">Organizing Complex Family Relationships
+									</div>
 								</div>
-						</div>
+							</div>
+							<div class="mask"></div>
+						</a>
+						<div class="item-img"><img src="images/WORK-projou.jpg" width="800px" alt="Project-OUCRM" /></div>
 					</div>
-					<div class="mask"></div>
-				</a>
-				<div class="item-img"><img src="images/WORK-projou.jpg" alt="Project-OUCRM" />
-				</div>
-			</div>
-			<div class="item item-type-line">
-				<a class="item-hover" href="http://margopixelated.com/proj-tnp.html" >
-					<div class="item-info">
-						<div class="headline">
-							The Noun Project UX
-								<div class="line"></div>
-								<div class="date">Understanding the Users of the World's Visual Language
+				</article>
+				<article>
+					<div class="item item-type-line">
+						<a class="item-hover" href="http://margopixelated.com/proj-tnp.html" >
+							<div class="item-info">
+								<div class="headline">The Noun Project UX
+									<div class="line"></div>
+									<div class="date">Understanding the Users of the World's Visual Language
+									</div>
 								</div>
-						</div>
+							</div>
+							<div class="mask"></div>
+						</a>
+						<div class="item-img"><img src="images/WORK-projtnp.jpg" width="800px" alt="Project-TNPUX" /></div>
 					</div>
-					<div class="mask"></div>
-				</a>
-				<div class="item-img"><img src="images/WORK-projtnp.jpg" alt="Project-TNPUX" />
-				</div>
-			</div>
-			<div class="item item-type-line">
-				<a class="item-hover" href="http://margopixelated.com/proj-wordoko.html">
-					<div class="item-info">
-						<div class="headline">
-							Wordoko UI
-								<div class="line"></div>
-								<div class="date">A Mobile Platform for Learning Japanese</div>
-						</div>
+				</article>
+				<article>
+					<div class="item item-type-line">
+						<a class="item-hover" href="http://margopixelated.com/proj-wordoko.html">
+							<div class="item-info">
+								<div class="headline">Wordoko UI
+									<div class="line"></div>
+									<div class="date">A Mobile Platform for Learning Japanese</div>
+								</div>
+							</div>
+							<div class="mask"></div>
+						</a>
+						<div class="item-img"><img src="images/WORK-projword.jpg" width="800px" alt="Project-WORDOKO" /></div>
 					</div>
-					<div class="mask"></div>
-				</a>
-				<div class="item-img"><img src="images/WORK-projword.jpg" alt="Project-WORDOKO" />
-				</div>
+				</article>
 			</div>
-			</section>
-		<!--ABOUT ME SECTION-->
-			<section class="about">
-			<h1><div id="info">Just a little about me.</div></h1>
-			<div class="content">
-				<p>I am an interaction designer, skilled in UI/UX design, with a background in graphics, and likes to code on the side. Alum of Columbia College Chicago & Startup Institute. Currently in Chicago, enjoying cafe au laits with honey, getting hi-fives from my dog, and getting hugs from my big orange cat. <br><br>
-				On paper: <a href="http://margopixelated.com/pdf/YOON-M_resume.pdf">"en résumé" means to sum up in French</a><br>
-				linkedin: <a href="http://www.linkedin.com/in/margoyoon">business. networking. synergy.</a><br>
-				twitter: <a href="http://www.twitter.com/margopixelated">#socialmedia</a><br>
-				electronic mail: <a class="mail" href="mailto:margo.yoon@gmail.com">geemail</a><br>
-										
-				</p>	
-			</div>
-			</section>-->
-		</div>
-		<!--FOOTER SECTION-->
-		<footer class="bottom">
-			<p>made with <span class="icon-pxheart"></span>. ©2015 margo yoon</p>
-			<!--Icons by <a href="http://www.icomoon.io">Icomoon</a> and <a href="http://www.thenounproject.com">The Noun Project</a><br>
-			Javascript by <a href="http://www.webdesignerdepot.com">Web Designer Depot</a> and <a href="http://www.magnific.com">Magnific.js</a></p>-->
+<!--ABOUT--><section id="sect3"></section>
+			<div id="info">
+				<h1>Just a little about me.</h1>
+					<p>An interaction designer by trade. Skilled in UI/UX design, with a background in graphics, and likes to code on the side. Alum of Columbia College Chicago & Startup Institute. Currently in Chicago, enjoying cafe au laits with honey, getting hi-fives from my dog, and getting hugs from my big orange cat. <br><br>
+					On paper: <a href="http://margopixelated.com/pdf/YOON-M_resume.pdf">"en résumé" means to sum up in French</a><br>
+					linkedin: <a href="http://www.linkedin.com/in/margoyoon">business. networking. synergy.</a><br>
+					twitter: <a href="http://www.twitter.com/margopixelated">#socialmedia</a><br>
+					electronic mail: <a class="mail" href="mailto:margo.yoon@gmail.com">geemail</a><br>						
+				</p>
+			</div>	
+		</main>
+		<footer>
+			made with <span class="icon-pxheart"></span>. ©2015 margo yoon
 		</footer>
 </body>
 </html>
