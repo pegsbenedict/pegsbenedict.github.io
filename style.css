@@ -123,17 +123,17 @@ header.small a:hover{
 }
 
 header{
-  transition: all .3s;
-  -moz-transition: all .3s; /* Firefox 4 */
-  -webkit-transition: all .3s; /* Safari and Chrome */
-  -o-transition: all .3s; /* Opera */
+  transition: all .5s;
+  -moz-transition: all .5s; /* Firefox 4 */
+  -webkit-transition: all .5s; /* Safari and Chrome */
+  -o-transition: all .5s; /* Opera */
 }
 
 h1, nav{
-	transition:all 1s;
-	-moz-transition: all 1s; /* Firefox 4 */
-  	-webkit-transition: all 1s; /* Safari and Chrome */
-  	-o-transition: all 1s; /* Opera */
+	transition:all .3s;
+	-moz-transition: all .3s; /* Firefox 4 */
+  	-webkit-transition: all .3s; /* Safari and Chrome */
+  	-o-transition: all .3s; /* Opera */
 }
 
 nav.links{
@@ -159,6 +159,7 @@ nav.links{
 }
 /*Main Content*/
 #content{
+	position:relative;
 	width: 57%;
 	margin: 180px 22% 0px;
 	padding-bottom: 75px;
@@ -344,22 +345,28 @@ z-index:0;
 }
 
 .icon-twitter:before {
-	content: "\ea91";
+    content: "\ea91";
 	padding: 0 10px;
 	margin: 0 10px;
 }
 
-.icon-github:before {
-	content: "\eab1";
+.icon-github2:before {
+    content: "\e601";
 	padding: 0 10px;
 	margin: 0 10px;
 }
 
 .icon-linkedin2:before {
-	content: "\eac9";
+    content: "\eac9";
 	padding: 0 10px;
 	margin: 0 10px;
 }
+/*email icon*/
+.icon-icon_8440:before {
+    content: "\e600";
+    padding:0 10px;
+    margin:0 10px;
+} 
 
 /*footer*/
 footer{
@@ -376,7 +383,7 @@ footer{
 }
 
 .icon-pxheart:before {
-	content: "\e600";
+    content: "\e602";
 	color:red;
 }
 

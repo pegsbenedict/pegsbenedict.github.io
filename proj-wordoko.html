@@ -3,9 +3,9 @@
 <head>
 	<title>Wordoko - Mobile UI</title>
 	<meta charset="utf-8" />
-	<link rel="stylesheet" type="text/css" href="http://meyerweb.com/eric/tools/css/reset/reset.css">
-	<link href="normalize.css" rel="stylesheet">
-	<link href="css/style.css" rel="stylesheet">
+	<!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+	<link rel="stylesheet" href="normalize.css">
+	<link rel="stylesheet" href="css/projstyle.css">
 	<link rel='stylesheet prefetch' href='css/magnific-popup.css'>
   	<link rel="stylesheet" href="css/magstyle.css" media="screen" type="text/css" />
 	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900' rel='stylesheet' type='text/css'>
@@ -32,103 +32,97 @@ $(document).on("scroll",function(){
 </head>
 <body>
 		<header class="big">
-			<h1><a href="http://www.margopixelated.com">Margo Yoon is pixelated.</a></h1>
-			<nav><ul class="topnav">
-			<a class="work" href="http://www.margopixelated.com#work">work</a></li>
-			<a class="practice" href="#">practice</a></li>
-			<a class="info" href="http://www.margopixelated.com#info">info</a></li>
-			</ul>
+			<h1><a href="http://margopixelated.com">Margo Yoon is pixelated.</a></h1>
+			<nav class="links">
+			<a href="#sect2">work</a></li>
+			<a href="#">practice</a></li>
+			<a href="#sect3">info</a></li>
 			</nav>
 		</header>
-		<div class="container">
 			<div class="title-word">
 				<h2>Wordoko UI</h2>
 					<h3>A Mobile Platform for Learning Japanese</h3>
 			</div>
-			<section class="proj-content">
-						<div class="row">
-							<div class="col">
-							<h4>Introduction</h4>
-							<p>
-							Wordoko is a word puzzle app designed to practice the three Japanese writing systems, Kanji, Katakana, and Hiragana. The idea was inspired by the present decline of Kanji used amongst the younger generations in Japan. Wordoko is a fun and entertaining way for Japanese language learners to practice their comprehension of the three writing systems. 
-							</p>
-							</div>
-						</div>
-						<div class="row">
-								<div class="col left">
-									<h4>My Role</h4>
-									<p>Working with the design studio, Great Job, I was responsible for the visual look of the game, as well as the branding and website.
-									</p>
-								</div>
-								<div class="col right">
-									<h4>The Constraints</h4>
-									<ul>
-									<li>UI design must comply to iOS design guidelines</li>
-									<li>Designs must fit screen dimensions for Iphone 4 & 5</li>
-									<li>All visual elements should follow Great Job's aesthetic and design philosophies</li>
-									<li>Each puzzle is in either Kanji, Hiragana, or Katakana. The words in the word bank are then in English and the other two writing systems</li>
-									</ul>
-								</div>
-						</div>	 
-						<div class="row">
-							<div class="col">
-								<figure class="image"><img src="images/GJ/WORD-wframe.png" alt="Wordoko_wireframes" style="width:100%;" />
-								<figcaption class="caption">a few low fidelity wireframes options</figcaption>
+			<main id="content">
+				<section class="row">
+					<article class="col">
+						<h4>Introduction</h4>
+						<p>While working with the design studio, Great Job, I designed the UI for a word puzzle app called Wordoko. The intent of the app was to create an engaging way for Japanese speakers to practice their lexicon between the three writing systems; Kanji, Katakana, and Hiragana.
+						</p>
+					</article>
+					<article class="col left">
+						<h4>My Role</h4>
+						<p>Working with the UX designers and their iOS developer, I was responsible for the design of the identity, website, and user interface of the app. </p>
+					</article>
+					<article class="col right">
+						<h4>Wordoko Users</h4>
+						<p>While the primary target audience are native Japanese speakers, there are also non-native speakers that would also enjoy playing Wordoko. The game provides a low pressure approach to learning Japanese vocabulary.</p>
+					</article>
+				</section>
+				<section class="row">
+					<article class="col">
+						<h4>User's journey</h4>
+						<img src="images/GJ/WORD-userjourney.png" alt="Wordoko_userjourney" class="full-img" />
+					</article>
+				</section>
+				<section class="row">
+					<article class="col">
+							<h4>Gesture-based design</h4>
+								<p>My approach to desigin the look and feel of the game had a few factors that needed to be considered. First, was that since the game would be on mobile, the interactions would be soley gesture-based. Another characteristic was that the design requires  little to no barrier of difficulty in understanding how to play.</p>
+					</article>
+					<article class="col">
+							<img src="images/GJ/WORD-wframes.png" alt="Wordoko_wireframes" class="full-img" />
+					</article>
+				</section>
+				<section class="row">
+					<article class="col left">
+						<p>Selecting a word in the puzzle, requires the player to highlight the letters. The element at the bottom of the interface is the word bank. The arrows indicate to the player that they can swipe left or right to view the various words they are searching for in the puzzle.<br><br>
+						The line icon above the word has the intent to allow the player hints. The user swipes up  to reveal the word in English and the remaining writing system.
+						</p>
+					</article>
+					<article class="col right">
+						<img src="images/GJ/animate-gesture.gif" alt="how2play" class="half-img" />
+					</article>
+				</section>
+				<section class="row">
+					<article class="col">
+						<p> I was inspired by the combination of  Japanese calligraphy and the 'Wabi' in the philosophy, Wabi-Sabi. I thus created a minimalistic aesthetic that wouldn't detract from the content and interactions of the game.</p>
+					</article>
+					<article class="col">
+							<img src="images/GJ/WORD-screens.png" alt="Wordoko_differentscreens" class="full-img" />
+					</article>
+				</section>
+				<section class="row">
+					<article class="col left">
+						<img src="images/GJ/animate-hint.gif" alt="answer-key" class="half-img" />
 								</figure>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col">
-							<h4>Keep It Simple</h4>
-								<p>My approach focused on clear communication to the player on the different functions and navigation of the app. The design was minimal, using color to denote the different categories, and the icon elements to indicate the screen options. The main typeface for the app was Avenir Next, a screen-friendly version of Avenir.
-							</p>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col">
-								<figure class="image"><img src="images/GJ/WORD-screens.png" style="width:900px; "alt="Wordoko_differentscreens" />
-								</figure>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col left" style="position:absolute; top:50%; transform: translate(0, 35%);">
-								<h4>Gesture Based Design</h4>
-								<p>To select a word on the puzzle, the player needs to touch and hold to highlight letters. The element at the bottom of the interface is the word bank. The arrows indicate to the player that they can swipe left or right to view the various words they are searching for in the puzzle. The line above the word signals to the player that they can swipe up revealing the word in English and other two Japanese writing systems(depending on the system chosen as the puzzle).</p>
-							</div>
-							<div class="col right">
-								<figure class="image"><img src="images/GJ/animate-gesture.gif" style="height:450px;" alt="how2play" />
-								</figure>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col left">
-								<figure class="image"><img src="images/GJ/animate-hint.gif" height="450px" alt="how2play" />
-								</figure>
-							</div>
-							<div class="col right" style="position:absolute; top:50%; left:40%; transform: translate(0, 50%);">
-								<h4>Give Hints, Not Answers</h4>
-								<p>The key icon on the top right was created as a hint section. The player if stumped can press and hold the key icon to reveal answers. It was designed to only be viewed briefly instead of being just an answer key, so as to not make the puzzle too easy for the player.</p>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col">
-							<h4>A Landing page</h4>
-							<p>Creating the app also required a marketing website. The purpose of the website was to have information about Wordoko outside of the iTunes store. I built a simple and direct website, and included button for players to download the game from the iTunes store. The live site can be viewed <a href="http://www.wordoko.com">here:</a></p>
-							</div>
-						</div>
-						<div class="row">
-							<figure class="image"><img src="images/GJ/WORD-website.png" style="width:900px;" alt="Wordoko_website" />
-							</figure>
-						</div>
-						<div class="row">
-							<div class="col">
-							<h4>Conclusion</h4>
-							<p>I had a great experience working with Great Job on Wordoko. It was my first mobile app design, and I learned the iOS design guidelines, and also the opportunities and limitations of designing for mobile. I used Sketch to create the prototype, and Bootstrap to build the website.</p>
-							</div>
-						</div>
-			</section>
-		</div>	
-			<footer><p class="bottom">made with <span class="icon-pxheart"></span>. ©2015 margo yoon</p>
-			</footer>
+					</article>
+					<article class="col right">
+						<h4>Not that easy</h4>
+						<p>The key icon on the top right was created as a hint section. The player if stumped can press and hold the key icon to reveal answers. It was designed to only be viewed briefly instead of being just an answer key, so as to not make the puzzle too easy for the player. Wordoko is a word puzzle app designed as a method to practice Japanese lexicon in the three writing systems, Kanji, Katakana, and Hiragana. The idea was inspired by the present decline of Kanji used amongst the younger generations in Japan. Wordoko is a fun and entertaining approach to bring together language and technology.</p>
+					</article>
+				</section>
+				<section class="row">
+					<article class="col">
+						<h4>The website</h4>
+						<p>Creating the app also required a marketing website. The purpose of the website was to have information about Wordoko outside of the iTunes store. I built a simple and direct website, and included button for players to download the game from the iTunes store. The live site can be viewed <a href="http://www.wordoko.com">here:</a></p>
+					</article>
+					<article class="col">
+						<img src="images/GJ/WORD-website.png" alt="Wordoko_website" class="full-img" />
+						</figure>
+					</article>
+				</section>
+				<section class="row">
+					<article class="col">
+						<p>I had a great experience working with Great Job on Wordoko. It was my first mobile app design project. I understand the iOS design guidelines, and also the opportunities and limitations of designing for mobile. I used Sketch to create the prototype, and Bootstrap to build the website.<br>
+						Wordoko is now available for free at the iTunes app store<a href="https://itunes.apple.com/us/app/wordoko/id904631100?ls=1&mt=8"> Download it here.</a></p>
+						<!--Why are you showing me this project? Do you have any results that show this project achieved its intended goal?<br>
+						Based on the process and outcome is there anything you learned you would have done differently?-->
+					</article>
+				</section>
+		</main>	
+		<footer>
+			made with <span class="icon-pxheart"></span>. ©2015 margo yoon
+		</footer>
 </body>
 </html>

@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+	<title>Practice Makes Perfect.</title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" type="text/css" href="http://meyerweb.com/eric/tools/css/reset/reset.css">
+	<link href="normalize.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=PT+Mono' rel='stylesheet' type='text/css'>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-47681249-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+ <script src="http://code.jquery.com/jquery-latest.js"></script>
+ <script type="text/javascript">
+$(document).on("scroll",function(){
+    if($(document).scrollTop()>300){
+        $("header").removeClass("big").addClass("small");
+    } else{
+        $("header").removeClass("small").addClass("big");
+    }
+});
+</script>
+</head>
+<body>
+		<header class="big">
+			<h1><a href="http://margopixelated.com">Margo Yoon is pixelated.</a></h1>
+			<nav><ul class="topnav">
+			<a class="work" href="#work">work</a></li>
+			<a class="practice" href="#">practice</a></li>
+			<a class="info" href="#info">info</a></li>
+			</ul>
+			</nav>
+		</header>
+		<div class="container">
+			<section class="post">
+			<h1 style="font-family:'Mohave', 'Lato', sans-serif; font-size:14pt; color:#1A1A1A;">02.04.2015: SELFIE</h2>
+				<img src="http://placehold.it/500x500" style="margin:0 auto" />
+			</section>
+			<section class="post">
+			<h1 style="font-family:'Mohave', 'Lato', sans-serif; font-size:14pt; color:#1A1A1A;">02.03.2015: DEAR DIARY</h2>
+				<img src="http://placehold.it/500x500" style="margin:0 auto" />
+			</section>
+		</div>
+		<!--FOOTER SECTION-->
+		<footer class="post-bottom"><p>made with <span class="icon-pxheart"></span>. ©2015 margo yoon</p>
+		</footer>
+</body>
+</html>
