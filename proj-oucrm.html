@@ -5,7 +5,7 @@
 	<meta charset="utf-8" />
 	<link rel="stylesheet" type="text/css" href="http://meyerweb.com/eric/tools/css/reset/reset.css">
 	<link href="normalize.css" rel="stylesheet">
-	<link href="css/style.css" rel="stylesheet">
+	<link href="css/projstyle.css" rel="stylesheet">
 	<link rel='stylesheet prefetch' href='css/magnific-popup.css'>
   	<link rel="stylesheet" href="css/magstyle.css" media="screen" type="text/css" />
 	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900' rel='stylesheet' type='text/css'>
@@ -33,108 +33,106 @@ $(document).on("scroll",function(){
 <body>
 		<header class="big">
 			<h1><a href="http://www.margopixelated.com">Margo Yoon is pixelated.</a></h1>
-			<nav><ul class="topnav">
-			<a class="work" href="http://www.margopixelated.com#work">work</a></li>
-			<a class="practice" href="#">practice</a></li>
-			<a class="info" href="http://www.margopixelated.com#info">info</a></li>
-			</ul>
+			<nav class="links">
+			<a href="http://www.margopixelated.com#work">work</a>
+			<a href="#">practice</a>
+			<a href="http://www.margopixelated.com#info">info</a>
 			</nav>
 		</header>
-		<div class="container">
-			<div class="title-ou">
-				<h2>Orion's University CRM</h2>
-					<h3>Organizing Complex Family Relationships</h3>
-			</div>
-			<section class="proj-content">
-						<div class="row">
-							<div class="col">
-							<h4>Introduction</h4>
-							<p>
-							Orion's University was a growing social enterprise geared towards offering afterschool programs for students. Due to their growth, their sales teams needed a standardized system to organize and manage leads information. Already existing customer relationship management software was regarded too bulky for the needs of Orion's University. Also, because OU sales associates communicated with families, multiple relationships existed. Each relationship requiring documentation. A customized CRM system seemed to be the best solution for OU's needs. 
-							</p>
-							</div>
-						</div>
-						<div class="row">
-								<div class="col left">
-									<h4>My Role</h4>
-									<p>I designed a customized CRM to improve sales operations for Orion's University. Utilizing their use case research, I created wireframes that suited the needs of the company. I was also responsible for the visual aesthetic of the platform and worked closely with the development team on the build.
-									</p>
-								</div>
-								<div class="col right">
-									<h4>The Facts</h4>
-									<ul>
-									<li>The need for a universal organizational system to collecting, recording, and sharing of contact leads for Orion's University</li><br>
-									<li>The system needs to represent the complexity of OU students' family relationships</li><br>
-									<li>Define the roles of adults in connection to students</li><br>
-									<li>Build a comprehensive system that information can be easily read and digested quickly</li>
-									</ul>
-								</div>
-						</div>	 
-						<div class="row">
-							<div class="col">
-								<button class="open-oucrm img-gallery"><img src="images/OU/OUCRM-overview.png" alt="CRMdashboard_mockup" style="width:100%;" /></button>
-								<div id="my-popup" class="mfp-hide white-popup"></div>
-  								<script src='js/jquery-2.1.1.min.js'></script>
- 				    			<script src='js/jquery.magnific-popup.min.js'></script>
-								<script src="js/magpop.js"></script>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col">
-							<h4>Family First</h4>
-								<p>An important aspect to tackle while designing was the complicated nature of the students' family structures. My approach was to have the overview to be organized by families instead of individuals. At a glance, a user could then view the total amount of adults, students, their relationships and roles.<br>
-								The app was built to have infinite scrolling so the user can look through as many of the contacts as quickly as possible. If one needed quick access to information, the search bar and filter are options fixed at the top of the page. 
-							</p>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col">
-								<img src="images/OU/OUCRM-addfam.gif" style="width:900px; "alt="adding_contact" />
-							</div>
-						</div>
-						<div class="row">
-							<div class="col">
-							<h4>Adding a Family</h4>
-							<p>When designing the adding and editing features of the CRM, it was important to put into consideration the ease of those actions for the user. Instead of a user clicking a button that would take them to a separate page to add a family, the "add family" feature inconspiciously slides out from the side of the page.</p>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col left">
-								<img src="images/OU/OUCRM-cardselect.gif" width="400px" alt="editing_contact" />
-							</div>
-							<div class="col right">
-								<img src="images/OU/OUCRM-cardflip.gif" width="400px" alt="contact_notes" />
-							</div>
-						</div>
-						<div class="row">
-							<div class="col left">
-								<h4>Card Edits</h4>
-								<p>In continuity with ease of the app, the info can be edited by simple selection of a contact's respective card.</p>
-							</div>
-							<div class="col right">
-								<h4>Card Notes</h4>
-								<p>If there was any additional information on a contact, a simple click on the bottom-right area of the card would reveal any information.</p>
-							</div>
-						</div>
-						<div class="row">
-							<img class="col" src="images/OU/OUCRM-intersect.gif" style="width:900px;" alt="adding_interaction" />
-						</div>
-						<div class="row">
-							<div class="col">
-							<h4>Adding an Interaction</h4>
-							<p>Every interaction with the family needs to be recorded for the sales teams. To composed an interaction event, a user can directly select the Interactions section. When selected, the Interactions section expands to reveal a form to record the event in a efficient manner. Rather than a scrollbar, the user can read through a set of three events at a time.</p>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col">
-							<h4>Conclusion</h4>
-							<p>While this project was quite a challenge, I learned a lot about how databases and sales operations function. Although having a customized CRM accomplishes only one area of sales management for the company, the creation of a standardized system designed for ease and quick comprehension will for certain increase productivity. Also, because of the design of the layout, it will improve sales associates understanding of their leads and their connections.<br>
-							The next steps are to test the product with the sales teams, get feedback, and make any other adjustments or additions accordingly. In the future, a mobile application of the CRM for sales associates to use onsite would be a goal.</p>
-							</div>
-						</div>
-			</section>
-			<footer><p class="bottom">made with <span class="icon-pxheart"></span>. ©2015 margo yoon</p>
-		</footer>
+		<div class="title-ou">
+			<h2>Orion's University CRM</h2>
+				<h3>Organizing Complex Family Relationships</h3>
 		</div>
+		<main id="content">
+			<section class="row">
+				<article class="col">
+					<h4>Introduction</h4>
+					<p>Orion's University was a growing social enterprise geared towards offering afterschool programs for students. Due to their growth, their sales teams needed a standardized system to organize and manage leads information. Already existing customer relationship management software was regarded too bulky for the needs of Orion's University. Also, because OU sales associates communicated with families, multiple relationships existed. Each relationship requiring documentation. A customized CRM system seemed to be the best solution for OU's needs. 
+					</p>
+				</article>
+				<article class="col left">
+					<h4>My Role</h4>
+					<p>I designed a customized CRM to improve sales operations for Orion's University. Utilizing their use case research, I created wireframes that suited the needs of the company. I was also responsible for the visual aesthetic of the platform and worked closely with the development team on the build.
+					</p>
+				</article>
+				<article class="col right">
+					<h4>Use Case</h4>
+					<p>The need for a universal organizational system to collecting, recording, and sharing of contact leads for Orion's University<br>
+					The system needs to represent the complexity of OU students' family relationships<br>
+					Define the roles of adults in connection to students<br>
+					Build a comprehensive system that information can be easily read and digested quickly<br>
+					</p>
+				</article>
+			</section>
+			<section class="row">	 
+				<article class="col">
+					<button class="open-oucrm img-gallery"><img src="images/OU/OUCRM-overview.png" alt="CRMdashboard_mockup" style="width:100%;" /></button>
+					<div id="my-popup" class="mfp-hide white-popup"></div>
+  						<script src='js/jquery-2.1.1.min.js'></script>
+ 				    	<script src='js/jquery.magnific-popup.min.js'></script>
+						<script src="js/magpop.js"></script>
+				</article>
+			</section>
+			<section class="row">
+				<article class="col">
+					<h4>Family First</h4>
+					<p>An important aspect to tackle while designing was the complicated nature of the students' family structures. My approach was to have the overview to be organized by families instead of individuals. At a glance, a user could then view the total amount of adults, students, their relationships and roles.<br>
+					The app was built to have infinite scrolling so the user can look through as many of the contacts as quickly as possible. If one needed quick access to information, the search bar and filter are options fixed at the top of the page. 
+					</p>
+				</article>
+			</section>
+			<section class="row">
+				<article class="col">
+					<img src="images/OU/OUCRM-addfam.gif" style="width:900px; "alt="adding_contact" />
+				</article>
+			</section>
+			<section class="row">
+				<article class="col">
+					<h4>Adding a Family</h4>
+					<p>When designing the adding and editing features of the CRM, it was important to put into consideration the ease of those actions for the user. Instead of a user clicking a button that would take them to a separate page to add a family, the "add family" feature inconspiciously slides out from the side of the page.</p>
+				</article>
+			</section>
+			<section class="row">
+				<article class="col left">
+					<img src="images/OU/OUCRM-cardselect.gif" width="400px" alt="editing_contact" />
+				</article>
+				<article class="col right">
+					<img src="images/OU/OUCRM-cardflip.gif" width="400px" alt="contact_notes" />
+				</article>
+			</section>
+			<section class="row">
+				<article class="col left">
+					<h4>Card Edits</h4>
+						<p>In continuity with ease of the app, the info can be edited by simple selection of a contact's respective card.
+						</p>
+				</article>
+				<article class="col right">
+					<h4>Card Notes</h4>
+						<p>If there was any additional information on a contact, a simple click on the bottom-right area of the card would reveal any information.
+						</p>
+				</article>
+			</section>
+			<section class="row">
+				<img class="col" src="images/OU/OUCRM-intersect.gif" style="width:900px;" alt="adding_interaction" />
+			</section>
+			<section class="row">
+				<article class="col">
+					<h4>Adding an Interaction</h4>
+						<p>Every interaction with the family needs to be recorded for the sales teams. To composed an interaction event, a user can directly select the Interactions section. When selected, the Interactions section expands to reveal a form to record the event in a efficient manner. Rather than a scrollbar, the user can read through a set of three events at a time.
+						</p>
+				</article>
+			</section>
+			<section class="row">
+				<article class="col">
+					<h4>Conclusion</h4>
+						<p>While this project was quite a challenge, I learned a lot about how databases and sales operations function. Although having a customized CRM accomplishes only one area of sales management for the company, the creation of a standardized system designed for ease and quick comprehension will for certain increase productivity. Also, because of the design of the layout, it will improve sales associates understanding of their leads and their connections.<br>
+						The next steps are to test the product with the sales teams, get feedback, and make any other adjustments or additions accordingly. In the future, a mobile application of the CRM for sales associates to use onsite would be a goal.
+						</p>
+				</article>
+			</section>
+		</main>
+		<footer>
+			made with <span class="icon-pxheart"></span>. ©2015 margo yoon
+		</footer>
 </body>
 </html>

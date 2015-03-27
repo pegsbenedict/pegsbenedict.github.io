@@ -37,6 +37,10 @@ body{
     visibility: hidden;
 }
 
+img{
+	width:100%;
+}
+
 /*Header*/
 header{
 	position:fixed;
@@ -161,14 +165,14 @@ nav.links{
 /*****************************************************/
 /*project-title*/
 .title-word{
-	background: rgba(128,166,231,1.0) url(../images/GJ/WORD-header.png) 50% 295px no-repeat scroll;
+	background: rgba(128,166,231,1.0) url(../images/GJ/WORD-header.png) 50% 290px no-repeat scroll;
 	height: 340px;
 	width: 100%;
-	padding-top: 165px;
+	padding-top: 167px;
 	margin-bottom: 30px;
 }
 
-.title-word h2{
+h2{
 	width: 815px;
 	font-family: 'Lato', sans-serif;
 	font-size: 1.8em;
@@ -180,7 +184,7 @@ nav.links{
 	border: 15px #000 double;
 }
 
-.title-word h3{
+h3{
 	text-align: center;
 	font-style: italic;
 	font-family: 'Lato', sans-serif;
@@ -191,16 +195,16 @@ nav.links{
 	margin-bottom: 20px;
 }
 .title-ou{
-	background: rgba(0,174,158,1.0) url(../images/OU/OUCRM-header2.png) 50% 290px no-repeat scroll;
-	height: 340px;
-	width: 100%;
-	padding-top: 165px;
-	margin-bottom: 30px;
+	background: rgba(0,174,158,1.0) url(../images/OU/OUCRM-header2.png) 50% 282px no-repeat scroll;
+  	height: 336px;
+  	width: 100%;
+  	padding-top: 152px;
+  	margin-bottom: 26px;
 }
 
 .title-tnp{
 	background: rgba(31,31,31,1.0) url(../images/TNP/TNP-header.png) 50% 290px no-repeat scroll;
-	height:340px;
+	height: 326px;
 	width:100%;
 	padding-top: 165px;
 	margin-bottom:30px;
