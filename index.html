@@ -1,143 +1,317 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-	<title>Welcome Friend.</title>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="normalize.css">
-	<link rel="stylesheet" href="style.css">
-	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=PT+Mono' rel='stylesheet' type='text/css'>
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Under Construction</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-  ga('create', 'UA-47681249-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
- <script src="http://code.jquery.com/jquery-latest.js"></script>
- <script type="text/javascript">
-$(document).on("scroll",function(){
-    if($(document).scrollTop()>300){
-        $("header").removeClass("big").addClass("small");
-    } else{
-        $("header").removeClass("small").addClass("big");
+```
+    body {
+        font-family: 'Times New Roman', Times, serif;
+        background: #c0c0c0;
+        background-image: 
+            repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(255,255,255,0.1) 10px, rgba(255,255,255,0.1) 20px),
+            repeating-linear-gradient(-45deg, transparent, transparent 10px, rgba(0,0,0,0.1) 10px, rgba(0,0,0,0.1) 20px);
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #000000;
     }
-});
-</script>
-<script>
-	$(function() {
-	  $('a[href*=#]:not([href=#])').click(function() {
-	    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
 
-	      var target = $(this.hash);
-	      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-	      if (target.length) {
-	        $('html,body').animate({
-	          scrollTop: target.offset().top
-	        }, 1000);
-	        return false;
-	      }
-	    }
-	  });
-	});
-</script>
+    .container {
+        text-align: center;
+        position: relative;
+        background: #c0c0c0;
+        padding: 20px;
+        border: 3px outset #c0c0c0;
+        box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+    }
+
+    .construction-sign {
+        background: #ffff00;
+        padding: 30px 40px;
+        border: 3px inset #c0c0c0;
+        position: relative;
+        margin: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .siren-left {
+        font-size: 2rem;
+        animation: blink 500ms infinite;
+    }
+
+    .siren-right {
+        font-size: 2rem;
+        animation: blink 500ms infinite;
+        animation-delay: 250ms;
+    }
+
+    .main-title {
+        font-size: 2.8rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        margin: 0;
+        color: #ff0000;
+        text-shadow: 2px 2px 0px #000000;
+        font-family: 'Impact', 'Arial Black', sans-serif;
+    }
+
+    .decorative-border {
+        border: 2px solid #000000;
+        margin: 10px 0;
+        padding: 10px;
+        background: #ffffff;
+    }
+
+    .marquee-text {
+        background: #000080;
+        color: #ffff00;
+        padding: 5px;
+        margin: 10px 0;
+        font-weight: bold;
+        font-size: 1.2rem;
+        border: 2px inset #c0c0c0;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+
+    .marquee-content {
+        display: inline-block;
+        animation: scroll 8s linear infinite;
+    }
+
+    .retro-buttons {
+        margin: 20px 0;
+    }
+
+    .retro-button {
+        background: #c0c0c0;
+        border: 2px outset #c0c0c0;
+        padding: 8px 16px;
+        margin: 5px;
+        font-family: 'MS Sans Serif', sans-serif;
+        font-size: 11px;
+        cursor: pointer;
+        display: inline-block;
+    }
+
+    .retro-button:active {
+        border: 2px inset #c0c0c0;
+    }
+
+    .gif-placeholder {
+        margin: 15px 0;
+        font-size: 1.5rem;
+        animation: rainbow 2s linear infinite;
+    }
+
+    @keyframes blink {
+        0%, 50% { visibility: visible; }
+        51%, 100% { visibility: hidden; }
+    }
+
+    @keyframes scroll {
+        0% { transform: translateX(100%); }
+        100% { transform: translateX(-100%); }
+    }
+
+    @keyframes rainbow {
+        0% { color: #ff0000; }
+        16% { color: #ff8000; }
+        33% { color: #ffff00; }
+        50% { color: #00ff00; }
+        66% { color: #0080ff; }
+        83% { color: #8000ff; }
+        100% { color: #ff0000; }
+    }
+
+    .counter {
+        font-family: 'Courier New', monospace;
+        background: #000000;
+        color: #00ff00;
+        padding: 5px;
+        margin: 10px 0;
+        border: 1px solid #00ff00;
+        font-size: 12px;
+    }
+
+    .email-link {
+        color: #0000ff;
+        text-decoration: underline;
+        font-family: 'Times New Roman', serif;
+    }
+
+    @media (max-width: 768px) {
+        .container {
+            margin: 10px;
+            padding: 15px;
+            width: calc(100% - 20px);
+            max-width: none;
+        }
+        
+        .construction-sign {
+            gap: 15px;
+            padding: 25px 20px;
+        }
+        
+        .siren-left,
+        .siren-right {
+            font-size: 1.5rem;
+        }
+        
+        .main-title {
+            font-size: 2rem;
+            letter-spacing: 2px;
+        }
+        
+        .marquee-text {
+            font-size: 1rem;
+            padding: 8px 5px;
+        }
+        
+        .gif-placeholder {
+            font-size: 1.2rem;
+            margin: 10px 0;
+        }
+        
+        .retro-button {
+            padding: 6px 12px;
+            font-size: 10px;
+            margin: 3px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        body {
+            padding: 5px;
+        }
+        
+        .container {
+            margin: 5px;
+            padding: 10px;
+            width: calc(100% - 10px);
+        }
+        
+        .construction-sign {
+            padding: 20px 15px;
+            margin: 10px 0;
+            gap: 12px;
+        }
+        
+        .siren-left,
+        .siren-right {
+            font-size: 1.8rem;
+        }
+        
+        .main-title {
+            font-size: 1.4rem;
+            letter-spacing: 1px;
+            line-height: 1.2;
+        }
+        
+        .marquee-text {
+            font-size: 0.9rem;
+            padding: 6px 3px;
+        }
+        
+        .gif-placeholder {
+            font-size: 1rem;
+            margin: 8px 0;
+        }
+        
+        .retro-buttons {
+            margin: 15px 0;
+        }
+        
+        .retro-button {
+            display: block;
+            width: 100%;
+            margin: 2px 0;
+            padding: 8px 12px;
+            font-size: 11px;
+            text-align: center;
+        }
+        
+        .decorative-border {
+            padding: 8px;
+            margin: 8px 0;
+        }
+        
+        .decorative-border p {
+            font-size: 13px !important;
+            line-height: 1.3;
+        }
+    }
+
+    @media (max-width: 320px) {
+        .main-title {
+            font-size: 1.2rem;
+            letter-spacing: 0.5px;
+        }
+        
+        .siren-left,
+        .siren-right {
+            font-size: 1.5rem;
+        }
+        
+        .construction-sign {
+            padding: 15px 10px;
+        }
+    }
+</style>
+```
+
 </head>
 <body>
-		<header class="big">
-			<h1><a href="http://margopixelated.com">Margo Yoon is pixelated.</a></h1>
-			<nav class="links">
-			<a href="#sect2">work</a></li>
-			<a href="http://margopixelated.com/practice.html">practice</a></li>
-			<a href="#sect3">info</a></li>
-			</nav>
-		</header>
-		<main id="content">
-<!--INTRO--><div id="intro">
-					<article>
-						<h1>Hello!</h1>
-						<p>Welcome to my website.<br>
-						My name is Margo Yoon. I enjoy designing connections between humans and computers.<br>
-						Let's collaborate together! Say <a class="mail" href="mailto:hi@margopixelated.com">hi@margopixelated.com</a></p>
-					</article><br>
-					<article class="social">
-					<a class="icon-github2" href="https://github.com/pegsbenedict"></a>
-					<a class="icon-linkedin2" href="http://www.linkedin.com/in/margoyoon"></a>
-					<a class="icon-twitter" href="https://twitter.com/margopixelated"></a>
-					<a class="icon-instagram" href="http://www.instagram.com/pegsbenedict"></a>
-					</article>
-				</div>
+    <div class="container">
+        <div class="gif-placeholder">🌟 ★ WELCOME TO MY HOMEPAGE ★ 🌟</div>
 
-<!--PORTFOLIO--><section id="sect2"></section>
-			<div id="work">
-				<article>
-				<h1>Work</h1>
-				<p>Explore case studies of projects that illustrate my design process. Other projects that I've worked on can be viewed on <a href="https://www.behance.net/margopixelated">my Behance profile</a></p>
-				</article>
-				<article><div class="item item-type-line">
-						<a class="item-hover" href="http://margopixelated.com/proj-oucrm.html">
-							<div class="item-info">
-								<div class="headline">Orion's University CRM
-									<div class="line"></div>
-									<div class="date">Organizing Complex Family Relationships
-									</div>
-								</div>
-							</div>
-							<div class="mask"></div>
-						</a>
-						<div class="item-img"><img src="images/WORK-projou.jpg" width="800px" alt="Project-OUCRM" /></div>
-					</div>
-				</article>
-				<article>
-					<div class="item item-type-line">
-						<a class="item-hover" href="http://margopixelated.com/proj-tnp.html" >
-							<div class="item-info">
-								<div class="headline">The Noun Project UX
-									<div class="line"></div>
-									<div class="date">Understanding the Users of the World's Visual Language
-									</div>
-								</div>
-							</div>
-							<div class="mask"></div>
-						</a>
-						<div class="item-img"><img src="images/WORK-projtnp.jpg" width="800px" alt="Project-TNPUX" /></div>
-					</div>
-				</article>
-				<article>
-					<div class="item item-type-line">
-						<a class="item-hover" href="http://margopixelated.com/proj-wordoko.html">
-							<div class="item-info">
-								<div class="headline">Wordoko UI
-									<div class="line"></div>
-									<div class="date">A Mobile Platform for Learning Japanese</div>
-								</div>
-							</div>
-							<div class="mask"></div>
-						</a>
-						<div class="item-img"><img src="images/WORK-projword.jpg" width="800px" alt="Project-WORDOKO" /></div>
-					</div>
-				</article>
-			</div>
-<!--ABOUT--><section id="sect3"></section>
-			<div id="info">
-				<article>
-				<h1>Just a little about me.</h1>
-					<p>Designer by trade. Skilled in UX & UI, and likes to code on the side. Alum of Columbia College Chicago & Startup Institute. Currently in Chicago, enjoying cafe au laits with honey, getting hi-fives from my dog, and getting hugs from my big orange cat. <a href="https://drive.google.com/file/d/0B5gjuFyKnSLuU0tkUTVLYTRIWVE/view?usp=sharing">View my credentials</a></span></p><br><br>
-				</article>
-				<article class="social">
-					<a class="icon-icon_8440" href="http://mailto:margo.yoon@gmail.com"></a>
-					<a class="icon-github2" href="https://github.com/pegsbenedict"></a>
-					<a class="icon-linkedin2" href="http://www.linkedin.com/in/margoyoon"></a>
-					<a class="icon-twitter" href="https://twitter.com/margopixelated"></a>
-					<a class="icon-instagram" href="http://www.instagram.com/pegsbenedict"></a>
-				</article>					
-			</div>	
-		</main>
-		<footer>
-			made with <span class="icon-pxheart"></span>. ©2015 margo yoon
-		</footer>
+```
+    <div class="construction-sign">
+        <div class="siren-left">🚨</div>
+        <h1 class="main-title">Under Construction</h1>
+        <div class="siren-right">🚨</div>
+    </div>
+    
+    <div class="decorative-border">
+        <p style="font-size: 14px;">This site is currently being built! Please check back soon!</p>
+    </div>
+    
+    <div class="marquee-text">
+        <div class="marquee-content">*** PARDON OUR DUST - NEW CONTENT COMING SOON - BEST VIEWED IN NETSCAPE NAVIGATOR ***</div>
+    </div>
+    
+    <div class="retro-buttons">
+        <div class="retro-button">Home</div>
+        <div class="retro-button">About</div>
+        <div class="retro-button">Links</div>
+        <div class="retro-button">Guestbook</div>
+    </div>
+    
+    <div class="counter">
+        You are visitor #001337 to this page!
+    </div>
+    
+    <p style="font-size: 12px; margin-top: 15px;">
+        Webmaster: <span class="email-link">webmaster@coolsite.com</span><br>
+        Last updated: December 31, 1999<br>
+        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Made with Notepad" style="width: 80px; height: 15px; background: #ff0000; color: white; text-align: center; font-size: 10px; line-height: 15px;" />
+    </p>
+</div>
+```
+
 </body>
 </html>
